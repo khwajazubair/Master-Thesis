@@ -1,0 +1,31 @@
+% Chapter Template
+
+\chapter{Conclusion} % Main chapter title
+
+\label{Chapter7} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 7. \emph{Conclusion}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Conclusions}
+ 
+ 
+ The experimental results explained in \ref{Chapter5} gives the idea that Hadoop optimizations does not improve the performance of Hadoop for every dataset process. For cloud services where physical computational resources are shared among multiple organizations to run Hadoop cluster(s), using capacity share scheduler of Hadoop is better choice in comparison to fairshare scheduler. Overall, the capacity scheduler of Hadoop has good performance in term of job completion time, but it has poor fairness results for job completion time. \\
+ 
+ As the name explains, fairshare scheduler of Hadoop has better fairness in all the cases in comparison to capacity share scheduler of Hadoop, but it has poor performance than capacity share scheduler. For submitted jobs to Hadoop cluster from single or multiple organizations, in case fairness is important, than fairshare scheduler is better choice, otherwise , capacity scheduler has better performance. \\
+ 
+ The collocation of more than one VM acting as datanode on top physical machine, degrades the performance  of Hadoop cluster. Collocation of VMs (datanodes)‌ from same cluster has better results in comparison to placement of VMs from different Hadoop clusters. Though the performance of Hadoop schedulers are degraded by collocation, but capacity share scheduler is more robust to collocation of datanodes.\\
+ 
+ The thesis explored the analysis of speculative task executions by Hadoop schedulers. The speculative  
+
+\section{Future Work}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+
+

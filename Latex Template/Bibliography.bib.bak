@@ -1,0 +1,284 @@
+% This file was created with JabRef 2.9.2.
+% Encoding: UTF-8
+
+@ARTICLE{mahout,
+  author = {Apache},
+  title = {Apache Mahout},
+  journal = {Apache Mahout is a project to build machine-learning libraries (such
+	as
+	
+	classification and clustering algorithms) that run on Hadoop},
+  owner = {zubair},
+  timestamp = {2013.10.05},
+  url = {http://mahout.apache.org/}
+}
+
+@ARTICLE{sailfish,
+  author = {Sriram Rao
+	
+	Raghu Ramakrishnan
+	
+	Adam Silberstein
+	
+	Mike Ovsiannikov Quantcast Corp
+	
+	Damian Reeves Quantcast Corp},
+  title = {Sailfish: A Framework For Large Scale Data Processing},
+  journal = {Microsoft, LinkedIn, Quantcast Corp},
+  year = {2012},
+  volume = {I},
+  pages = {1- 14},
+  owner = {zubair},
+  timestamp = {2013.08.25}
+}
+
+@ARTICLE{mapreduce,
+  author = {Jeffrey Dean and Sanjay Ghemawat},
+  title = {MapReduce: Simplified Data Processing on Large Clusters},
+  journal = {Google},
+  year = {Dec, 2004},
+  volume = {I},
+  pages = {all},
+  owner = {zubair},
+  timestamp = {2013.10.05},
+  url = {http://labs.google.com/papers/mapreduce.html}
+}
+
+@ARTICLE{google,
+  author = {Jeffrey Dean and Sanjay Ghemawat},
+  title = {MapReduce: Simplified Data Processing on Large Clusters},
+  journal = {Google, Inc},
+  year = {2004},
+  volume = {I},
+  pages = {1236--1239},
+  number = {2},
+  month = {March},
+  abstract = {MapReduce is a programming model and an associated implementation
+	for processing and generating large data sets. Users specify a map
+	function that processes a key/value pair to generate a set of intermediate
+	key/value pairs, and a reduce function that merges all intermediate
+	values associated with the same intermediate key. Many real world
+	tasks are expressible in this model, as shown in the paper.},
+  numpages = {13}
+}
+
+@ELECTRONIC{fb1,
+  author = {Facbook},
+  month = {September},
+  year = {2013},
+  title = {Key Facts},
+  language = {English},
+  organization = {Facebook},
+  url = {https://newsroom.fb.com/Key-Facts},
+  owner = {zubair},
+  timestamp = {2013.09.15}
+}
+
+@ELECTRONIC{yarn,
+  author = {The Apache Software Foundation},
+  month = {August},
+  year = {2013},
+  title = {Apache Hadoop NextGen MapReduce (YARN)},
+  language = {English},
+  howpublished = {website},
+  organization = {Apache},
+  url = {www.apache.org},
+  owner = {zubair},
+  timestamp = {2013.10.10}
+}
+
+@ARTICLE{afg2,
+  author = {Elham Ghashghai and Rosalind Lewis},
+  title = {Issues Affecting Internet Use in Afghanistan and Developing Countries
+	in the Middle East},
+  year = {2003},
+  volume = {http://www.rand.org/publications/IP/IP23.},
+  pages = {all},
+  month = {march},
+  owner = {zubair},
+  timestamp = {2013.10.21},
+  url = {http://www.rand.org/publications/IP/IP23}
+}
+
+@ARTICLE{nist,
+  author = {Peter Mell
+	
+	Timothy Grance},
+  title = {The NIST Definition of
+	
+	Cloud Computing},
+  journal = {National Institute of Standards and Technology},
+  year = {January 2011},
+  volume = {Draft},
+  pages = {7},
+  owner = {zubair},
+  timestamp = {2013.10.09}
+}
+
+@ELECTRONIC{afg1,
+  author = {Ministry of Information and Communication of Afghanistan},
+  month = {January},
+  year = {2012},
+  title = {publication and projects},
+  language = {English},
+  howpublished = {Website},
+  organization = {MCIT},
+  address = {Kabul , Afghanistan},
+  url = {http://mcit.gov.af/en},
+  owner = {zubair},
+  timestamp = {2013.10.21}
+}
+
+@ARTICLE{Jablonski2011,
+  author = {By Joey Jablonski},
+  title = {Introduction to Hadoop},
+  journal = {Dell | Hadoop White Paper Series},
+  year = {2011},
+  volume = {I},
+  pages = {1-9},
+  number = {3},
+  month = {January},
+  abstract = {Hadoop is a rapidly evolving ecosystem of components for implementing
+	the Google MapReduce algorithms in a scalable fashion on commodity
+	hardware. Hadoop enables users to store and process large volumes
+	of data and analyze it in ways not previously possible with less
+	scalable solutions or standard SQL-based approaches.},
+  keywords = {Diode Laser},
+  numpages = {9},
+  url = {http://link.aip.org/link/?RSI/62/1/1}
+}
+
+@ARTICLE{mat1,
+  author = {Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz},
+  title = {Improving MapReduce Performance in Heterogeneous Environments},
+  journal = {USENIX Association, 8th USENIX Symposium on Operating Systems Design
+	and Implementation},
+  year = {2008},
+  volume = {I},
+  pages = {13},
+  owner = {zubair},
+  timestamp = {2013.08.25}
+}
+
+@ARTICLE{dynamic,
+  author = {Thomas Sandholm and Kevin Lai},
+  title = {Dynamic Proportional Share Scheduling in Hadoop},
+  journal = {Social Computing Lab, Hewlett-Packard Labs, Palo Alto, CA 94304,
+	USA},
+  year = {2010},
+  volume = {I},
+  pages = {110-131},
+  owner = {zubair},
+  timestamp = {2013.08.25}
+}
+
+@ARTICLE{openstack,
+  author = {Cloud Software},
+  title = {OpenStack},
+  journal = {Creative Commons},
+  year = {2011},
+  volume = {I},
+  pages = {2},
+  owner = {zubair},
+  timestamp = {2013.10.05},
+  url = {www.openstack.org}
+}
+
+@ELECTRONIC{afg3,
+  author = {Internet World Stats},
+  month = {Dec},
+  year = {2011},
+  title = {ASIA INTERNET USAGE AND POPULATION},
+  language = {English},
+  url = {http://www.internetworldstats.com/stats3.htm#asia},
+  owner = {zubair},
+  timestamp = {2013.10.21}
+}
+
+@BOOK{tom3,
+  title = {Hadoop:The Definitive Guide},
+  year = {2012},
+  author = {Tom White},
+  volume = {Third Edition},
+  number = {12},
+  pages = {1-686},
+  month = {May},
+  abstract = {Operating a laser diode in an extended cavity which provides frequency-selective
+	feedback is a very effective method of reducing the laser's linewidth
+	and improving its tunability. We have developed an extremely simple
+	laser of this type, built from inexpensive commercial components
+	with only a few minor modifications. A 780~nm laser built to this
+	design has an output power of 80~mW, a linewidth of 350~kHz, and
+	it has been continuously locked to a Doppler-free rubidium transition
+	for several days.},
+  journal = {O'REILLY},
+  numpages = {686},
+  url = {http://link.aip.org/link/?RSI/72/4477/1}
+}
+
+@ARTICLE{dell,
+  author = {Carl E. Wieman and Leo Hollberg},
+  title = {Using Diode Lasers for Atomic Physics},
+  journal = {Review of Scientific Instruments},
+  year = {1991},
+  volume = {62},
+  pages = {1--20},
+  number = {1},
+  month = {January},
+  abstract = {We present a review of the use of diode lasers in atomic physics with
+	an extensive list of references. We discuss the relevant characteristics
+	of diode lasers and explain how to purchase and use them. We also
+	review the various techniques that have been used to control and
+	narrow the spectral outputs of diode lasers. Finally we present a
+	number of examples illustrating the use of diode lasers in atomic
+	physics experiments. Review of Scientific Instruments is copyrighted
+	by The American Institute of Physics.},
+  keywords = {Diode Laser},
+  numpages = {20},
+  url = {http://link.aip.org/link/?RSI/62/1/1}
+}
+
+@ARTICLE{fair,
+  author = {X},
+  title = {Hadoop Fair Scheduler Design Document},
+  journal = {X},
+  year = {2010},
+  volume = {I},
+  pages = {1-11},
+  owner = {zubair},
+  timestamp = {2013.08.26}
+}
+
+@ARTICLE{cross-industry,
+  author = {Yanpei Chen, Sara Alspaugh, Randy Katz University},
+  title = {Interactive Analytical Processing in Big Data Systems: A Cross-Industry
+	Study of MapReduceWorkloads},
+  journal = {Proceedings of the VLDB Endowment
+	
+	University of California, Berkeley},
+  year = {2012},
+  volume = {I},
+  pages = {1-12},
+  owner = {zubair},
+  timestamp = {2013.08.25}
+}
+
+@ARTICLE{ieee1,
+  author = {Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong
+	Zhang , Zhiwei Xu},
+  title = {RCFile: A Fast and Space-efﬁcient Data Placement
+	
+	Structure in MapReduce-based Warehouse Systems},
+  journal = {IEEE},
+  year = {2011},
+  volume = {I},
+  pages = {1199-1208},
+  owner = {zubair},
+  timestamp = {2013.09.15}
+}
+
+@ARTICLE{,
+  owner = {zubair},
+  timestamp = {2013.10.21}
+}
+

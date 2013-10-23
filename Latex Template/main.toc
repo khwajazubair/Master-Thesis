@@ -1,0 +1,71 @@
+\contentsline {chapter}{Declaration of Authorship}{i}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Abstract}{iii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{v}{dummy.3}
+\vspace {1em}
+\contentsline {chapter}{List of Figures}{viii}{dummy.5}
+\contentsline {chapter}{List of Tables}{ix}{dummy.7}
+\contentsline {chapter}{Abbreviations}{x}{dummy.9}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.12}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.13}
+\contentsline {section}{\numberline {1.2}Objective}{2}{section.14}
+\contentsline {section}{\numberline {1.3}Contribution}{3}{section.15}
+\contentsline {section}{\numberline {1.4}Thesis Overview}{4}{section.16}
+\contentsline {chapter}{\numberline {2}Background}{5}{chapter.17}
+\contentsline {section}{\numberline {2.1}MapReduce}{5}{section.18}
+\contentsline {section}{\numberline {2.2}Hadoop}{7}{section.20}
+\contentsline {subsection}{\numberline {2.2.1}HDFS}{8}{subsection.21}
+\contentsline {subsubsection}{\numberline {2.2.1.1}HDFS Blocks}{9}{subsubsection.22}
+\contentsline {subsection}{\numberline {2.2.2}Namenode and Datanode}{9}{subsection.23}
+\contentsline {subsection}{\numberline {2.2.3}Schedulers}{10}{subsection.24}
+\contentsline {section}{\numberline {2.3}MapReduce Versions}{11}{section.25}
+\contentsline {subsubsection}{\numberline {2.3.0.1}MapReduce Version 1}{11}{subsubsection.26}
+\contentsline {subsubsection}{\numberline {2.3.0.2}MapReduce version 2 (Yarn)}{12}{subsubsection.28}
+\contentsline {section}{\numberline {2.4}Cloud Computing}{14}{section.30}
+\contentsline {subsection}{\numberline {2.4.1}Service Models}{14}{subsection.31}
+\contentsline {subsection}{\numberline {2.4.2}Deployment Models}{15}{subsection.32}
+\contentsline {chapter}{\numberline {3}Hadoop Optimizations}{16}{chapter.33}
+\contentsline {section}{\numberline {3.1}Capacity Scheduler}{16}{section.34}
+\contentsline {section}{\numberline {3.2}Fairshare Scheduler}{18}{section.35}
+\contentsline {section}{\numberline {3.3}Speculative Execution}{19}{section.36}
+\contentsline {section}{\numberline {3.4}LATE Scheduler}{20}{section.37}
+\contentsline {subsection}{\numberline {3.4.1}Advantages of LATE}{22}{subsection.38}
+\contentsline {chapter}{\numberline {4}Methodology }{23}{chapter.39}
+\contentsline {section}{\numberline {4.1}Objective of The Work}{23}{section.40}
+\contentsline {section}{\numberline {4.2}Methodology}{24}{section.41}
+\contentsline {section}{\numberline {4.3}Work Scope}{25}{section.42}
+\contentsline {section}{\numberline {4.4}Experimental Environment}{26}{section.43}
+\contentsline {subsection}{\numberline {4.4.1}Physical Resources}{27}{subsection.44}
+\contentsline {subsection}{\numberline {4.4.2}Terasort}{27}{subsection.45}
+\contentsline {subsection}{\numberline {4.4.3}OpenStack}{28}{subsection.46}
+\contentsline {subsection}{\numberline {4.4.4}Ubuntu Virtual Machine}{28}{subsection.47}
+\contentsline {chapter}{\numberline {5}Evaluation}{29}{chapter.48}
+\contentsline {section}{\numberline {5.1}Experiment 1}{30}{section.49}
+\contentsline {subsection}{\numberline {5.1.1}Objectives}{30}{subsection.50}
+\contentsline {subsection}{\numberline {5.1.2}Results}{30}{subsection.51}
+\contentsline {subsection}{\numberline {5.1.3}Fairness }{33}{subsection.53}
+\contentsline {subsection}{\numberline {5.1.4}Discussion}{34}{subsection.55}
+\contentsline {section}{\numberline {5.2}Experiment 2}{34}{section.56}
+\contentsline {subsection}{\numberline {5.2.1}Objectives}{34}{subsection.57}
+\contentsline {subsection}{\numberline {5.2.2}Results}{35}{subsection.58}
+\contentsline {subsection}{\numberline {5.2.3}Fairness}{37}{subsection.60}
+\contentsline {subsection}{\numberline {5.2.4}Discussion}{38}{subsection.62}
+\contentsline {section}{\numberline {5.3}Experiment 3}{39}{section.63}
+\contentsline {subsection}{\numberline {5.3.1}Objective}{39}{subsection.64}
+\contentsline {subsection}{\numberline {5.3.2}Results }{40}{subsection.65}
+\contentsline {subsection}{\numberline {5.3.3}Fairness}{42}{subsection.67}
+\contentsline {subsection}{\numberline {5.3.4}Discussion}{42}{subsection.69}
+\contentsline {chapter}{\numberline {6}Cloud Computing in Afghanistan}{45}{chapter.70}
+\contentsline {section}{\numberline {6.1}Analysis of IT‌ Infrastructure in Afghanistan}{45}{section.71}
+\contentsline {subsection}{\numberline {6.1.1}National Optical Fiber Backbone}{46}{subsection.72}
+\contentsline {subsection}{\numberline {6.1.2}Challenges}{46}{subsection.73}
+\contentsline {subsection}{\numberline {6.1.3}Cloud Computing In Afghanistan}{47}{subsection.74}
+\contentsline {chapter}{\numberline {7}Conclusion}{48}{chapter.75}
+\contentsline {section}{\numberline {7.1}Conclusion}{48}{section.76}
+\contentsline {subsection}{\numberline {7.1.1}Discussion}{48}{subsection.77}
+\contentsline {section}{\numberline {7.2}Future Work}{48}{section.78}
+\vspace {2em}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{49}{dummy.79}
