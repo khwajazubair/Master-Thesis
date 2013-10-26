@@ -179,9 +179,9 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Analysis of Side Effects and Performance Evaluation of Hadoop's Optimization} % Your thesis title - this is used in the title and abstract
+\thesistitle{An Analysis of Side-effects of Hadoop Optimizations in the Data-center} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\supervisor{Prof. Anja \textsc{Feldmann} \\ Prof.Kao \textsc{Odej}} % You supervisor's name - this is used in the title page
+\supervisor{Prof. Anja \textsc{Feldmann} \\ Prof. Kao \textsc{Odej}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{Dr. Marco Canini} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
@@ -253,7 +253,7 @@
       \smallskip
       {\LARGE \authornames \par}
       \vfill
-      {\large A thesis submitted in partial fulfillment for the \par}
+      {\large A thesis submitted in partial fulfilment for the \par}
       {\large degree of \degreename \par}
       \bigskip
       \bigskip

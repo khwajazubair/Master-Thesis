@@ -78,11 +78,9 @@
 \begin{minipage}{0.3\textwidth}
 \begin{flushleft} \large
 \emph{Supervisors:} \\
-{\supname}\\ 
-
- Advisors:\\ % Supervisor name - remove the \href bracket to remove the link
+{\supname}\\ % Supervisor name - remove the \href bracket to remove the link
 {\examname}\\
-Phd-Std.Lalith Surish 
+{Lalith Surish} 
  
 \end{flushleft}
 \end{minipage}\\[3cm]
@@ -98,6 +96,8 @@ Phd-Std.Lalith Surish
 \end{center}
 
 \end{titlepage}
+
+\clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE
@@ -154,7 +154,7 @@ Khwaja Zubair Sediqi
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-The increasing volume of data from user interaction to Internet based applications requires new storage and processing technologies. Typical databases can not process large datasets of terabytes in reasonable time. MapReduce is a programming paradigm that was invented by Yahoo! to process large datasets in key/value pattern.  Hadoop is an open source implementation of MapReduce, that is used to store and process large datasets in parallel and distributed manner on cluster of commodity computers. Since preparing and maintenance of infrastructure for storage and process of large datasets requires infrastructure, storage and computational resources, which costs expensive to organizations. As solution, organizations can use cloud computing services, to store, retrieve and process large datasets and use provided resources according to their need.\\
+The increasing volume of data from user interaction to Internet-based applications requires new storage and processing technologies. Typical databases can not process large datasets of terabytes in reasonable time. MapReduce is a programming paradigm that was invented by Yahoo! to process large datasets in key/value pattern.  Hadoop is an open source implementation of MapReduce, that is used to store and process large datasets in parallel and distributed manner on cluster of commodity computers. Since preparing and maintenance of infrastructure for storage and process of large datasets requires infrastructure, storage and computational resources, which costs expensive to organizations. As solution, organizations can use cloud computing services, to store, retrieve and process large datasets and use provided resources according to their need.\\
 
 Running large clusters of Hadoop on cloud infrastructure is expensive for organizations. The optimization added to Hadoop schedulers provides the opportunity of multi-tenancy for the organization, where sing Hadoop cluster can be shared by multiple organization. Cloud operators such as AMAZON EC2, provides virtualized infrastructure, where virtual machines are collocated on single physical machine. This thesis is about analysis of side effects of collocated VMs ( Collocated VMs are datanodes of Hadoop cluster(s)) on performance of Hadoop. The thesis also evaluates the optimizations made to Hadoop schedulers. More precisely, the performance of fairshare scheduler and capacity share schedulers are analysed. The effect of speculative task execution for mentioned schedulers is also explained. \\
 
@@ -171,7 +171,19 @@ As result, we want to show that speculative task execution for small jobs does n
 
 \acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
+
+ I  begin these acknowledgements by expressing my gratitude to my supervisors Prof. Anja Feldmann and Prof. Kao Odej who guided me through this research and were great source of encouragement.
+
+ 
+  I would like to express my gratitude to my advisor Dr. Marco Canini, that gave me freedom to pursue my own ideas and directions, while also providing me valuable feedback and guidance throughout this work. I would like to thank my advisor Mr. Lalith Suresh, for supporting me in all phases of this thesis including setup of testbed, running experiments and helping me to solve various problems. I would also like to thank members of FG INET‌ group for the availability and support with the clusters during the evaluation phase of this work.
+  
+ 
+ Furthermore, I want to thank ZiiK/TU‌ Berlin and DAAD‌ for their support and scholarship I benefited during this master's program. I want to thank all my friends and relatives for the encouragement and support during this master's program.
+ 
+  
+  Last, but not the least, I would like to thank my family for their immense support, love 
+and encouragement, without whom none of this would have been possible.  
+
 }
 \clearpage % Start a new page
 
@@ -187,8 +199,8 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 \lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
 
-\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
-\listoftables % Write out the List of Tables
+%\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+%\listoftables % Write out the List of Tables
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
@@ -252,7 +264,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 
 \dedicatory{For/Dedicated to/To my\ldots} % Dedication text
 
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics Add a gap in the Contents, for aesthetics
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS

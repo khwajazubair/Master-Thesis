@@ -79,8 +79,8 @@ A total number of seven(7) computer machines connected through central switch is
 Terasort is a benchmark tool used to sort large set of generated data. It is a standard tool to generate and sort large data sets using random data. The tool was used by Yahoo!‌ at 2009 to sort one terabyte of data on 9000 machines using Hadoop. The two core component of terasort is Teragen and Terasort. 
 
 \textbf{Teragen} - Generates the random data that is used as input data for terasort.The data is generated in rows and the format of 
-row is "<10 bytes key><10 bytes rowid><78 bytes filler>". 
-The keys are random characters from the set ‘ ‘ .. ‘~’, rowid is justified row id as a int and the filler consists of 7 runs of 10 characters from "A" to "Z". Teragen divides the number of rows by the desired number of tasks and assigns set of rows to each map.\ref{TeraByte Sort on Apache Hadoop Owen O’MalleyYahoo!}
+row is "<10 bytes key><10 bytes row-id><78 bytes filler>". 
+The keys are random characters from the set ‘ ‘ .. ‘~’, row-id is justified row id as a int and the filler consists of 7 runs of 10 characters from "A" to "Z". Teragen divides the number of rows by the desired number of tasks and assigns set of rows to each map.\ref{TeraByte Sort on Apache Hadoop Owen O’MalleyYahoo!}
 
 
 \textbf{TeraSort} - It is implemented as a MapReduce sort job with a custom partitioner that uses a sorted list of n-1 sampled keys that define the key range for each reduce.
@@ -106,7 +106,7 @@ OpenStack is developed by developers of cloud computing, it is open standard clo
 \textbf{OpenStack Imaging Service} Using image services, the clients can register new disk images.The image discovery is designed to facilitate the discovery,registration and delivery services of virtual disk to the users.               
               
  
-The software called "OpenStack" is used as tool to create,store and manage virtual machines. We use it for our experiments. Initially, we spawned only Ubuntu VMs and configured it for Hadoop cluster to run terasort workload. After making sure, that VMs are running properly and sorts the workload, we create an image from  running VM to use it for further experiments. Basically, images are similar to clone of Ubuntu system that is capable to reboot, install, and configure for Hadoop clusters. Though, there were only Ubuntu virtual machine used for experiments but, within Ubuntu two different virtual machines images were configured which was called "hadoop namenode image" and "hadooop datanode image". Respectively, the images were spawned, configured and used to act as namenode and datanodes for experiments.\\ 
+The software called "OpenStack" is used as tool to create,store and manage virtual machines. We use it for our experiments. Initially, we spawned only Ubuntu VMs and configured it for Hadoop cluster to run terasort workload. After making sure, that VMs are running properly and sorts the workload, we create an image from  running VM to use it for further experiments. Basically, images are similar to clone of Ubuntu system that is capable to reboot, install, and configure for Hadoop clusters. Though, there were only Ubuntu virtual machine used for experiments but, within Ubuntu two different virtual machines images were configured which was called "Hadoop namenode image" and "Hadoop datanode image". Respectively, the images were spawned, configured and used to act as namenode and datanodes for experiments.\\ 
 
 \subsection{Ubuntu Virtual Machine}
 
