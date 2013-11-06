@@ -19,9 +19,9 @@
  
 Though organizations can have their own private compute resources with sufficient capacity to execute jobs on, but such private resources may be expensive and lead to low utilization of resources. Capacity Scheduler is pluggable MapReduce scheduler that is designed to allow multiple tenants to share large Hadoop cluster securely and to maximize utilization of the cluster. It is cost effective for the organization to share clusters and run jobs comparing to having their own private clusters.\\ 
 
- Using capacity scheduler , the organizations fund the Hadoop cluster collectively, and obtains their share. The available resource in the Hadoop cluster is partitioned and  guaranteed  minimum share for each organization is provided. In addition, organization can access more then limited share only when the cluster resource is not used by other organization. This mechanism provides elasticity for organizations and maximizes the cluster utilization. It means, if other organizations does not use the cluster, then any organization can use entire (not limited to its own share) cluster resources for its computational jobs as long as they are the only one organization submitting jobs to the cluster.\\
+ Using capacity scheduler, the organizations fund the Hadoop cluster collectively, and obtains their share. The available resource in the Hadoop cluster is partitioned and  guaranteed  minimum share for each organization is provided. In addition, organization can access more then limited share only when the cluster resource is not used by other organization. This mechanism provides elasticity for organizations and maximizes the cluster utilization. It means, if other organizations does not use the cluster, then any organization can use entire (not limited to its own share) cluster resources for its computational jobs as long as they are the only one organization submitting jobs to the cluster.\\
  
- As the cluster is shared among organization, this leads to strong cooperation for multi-tenancy to guarantee minimum share limit of each organization. To avoid more than limit consume of resources  by single job or user that affects other organization's share, capacity scheduler provides safe-guards that limits the user or job access to its share.\
+ As the cluster is shared among organization, this leads to strong cooperation for multi-tenancy to guarantee minimum share limit of each organization. To avoid more than limit consume of resources  by single job or user that affects other organization's share, capacity scheduler provides safe-guards that limits the user or job access to its share.\\
  
   The capacity scheduler , manages users and jobs in queue structures. Typically the queues are setup by administrator, where multiple queues are created for job management. Each organization may own one or more queues where they can submit the jobs. Each queue is provided limited portion of computational resources to process the jobs. The amount of computational resources depends on economical share of the cluster for an organization. The more economical share you have , the more computational resources are available for your job process.  Typically, the resources are divided on percentile base for each queue and if there is single organization submitting the jobs, it can use entire computational resources of cluster. 
  
@@ -32,52 +32,37 @@ Though organizations can have their own private compute resources with sufficien
 
  
 
- \textbf{Capacity Guarantee}
-
-Capacity scheduler supports multiple queues, the organizations submit jobs to their relevant queue(s). The cluster resources is allocated between all the queues based on their economical share of the cluster. It means, certain amount of resources are dedicated to each queue, where job from that queue can use these resources. There could be soft or hard limit between resources of the queues, configured by administrator. Where soft limit means that queue can access more then limited capacity if the others does not use the resource. Hard limit refers to situation where organization can use only their own share of the resources, and not more. 
+ \textbf{Capacity Guarantee} Capacity scheduler supports multiple queues, the organizations submit jobs to their relevant queue(s). The cluster resources is allocated between all the queues based on their economical share of the cluster. It means, certain amount of resources are dedicated to each queue, where job from that queue can use these resources. There could be soft or hard limit between resources of the queues, configured by administrator. Where soft limit means that queue can access more then limited capacity if the others does not use the resource. Hard limit refers to situation where organization can use only their own share of the resources, and not more. 
 
 
  
- \textbf{Security}
- 
-In order to prevent unauthorized user to submit jobs to queue, strict access control lists are applied to each queue. The safe-guards can be used to ensure that users can not view or modify jobs from other users.   
+ \textbf{Security} In order to prevent unauthorized user to submit jobs to queue, strict access control lists are applied to each queue. The safe-guards can be used to ensure that users can not view or modify jobs from other users.   
  
 
-\textbf{Elasticity }
-
-Free resources can be allocated to queues that are in demand of resources. For any queue, that has a share of computational resources, and does not need it any more or for period of time, its share is allocated to other queues that are in demand for resources. The scheduler allocates the resources to queues that are running lower than their share and are in demand for further computational resources. This mechanism maximizes the utilization of resources and ensures that resource are available in elastic manner. 
+\textbf{Elasticity } Free resources can be allocated to queues that are in demand of resources. For any queue, that has a share of computational resources, and does not need it any more or for period of time, its share is allocated to other queues that are in demand for resources. The scheduler allocates the resources to queues that are running lower than their share and are in demand for further computational resources. This mechanism maximizes the utilization of resources and ensures that resource are available in elastic manner. 
 
 
-\textbf{Multi-tenancy }
+\textbf{Multi-tenancy } To ensure that cluster resource is not monopolized by single job, user or queue, limits are provided which ensures that the system ( in Hadoop version 1 JobTracker ) is not overwhelmed by too many tasks or jobs. 
 
-To ensure that cluster resource is not monopolized by single, job, user or queue, limits are provided which ensures that the system ( in Hadoop version 1 JobTracker ) is not overwhelmed by too many tasks or jobs. 
-
-\textbf{Operability }
-
-User and administrators can view current allocation of the queues of the system through console. It is also possible to change queue modification during run time without disruption to users. 
+\textbf{Operability } Users and administrators can view current allocation of the queues of the system through console. It is also possible to change queue modification during run time without disruption to users. 
 
 
-\textbf{Resource-based Scheduling }
+\textbf{Resource-based Scheduling } Resource intensive jobs are those that require or can demand for higher-requirement than default. Capacity Scheduler can accommodate applications or in particular jobs with different resource requirement. Memory is the only resource currently supported by Capacity Scheduler. 
 
-Resource intensive jobs are those that require or can demand for higher-requirement than default. Capacity Scheduler can accommodate applications or in particular jobs with different resource requirement. Memory is the only resource currently supported by Capacity Scheduler. 
-
-\textbf{Job Priorities }
-
-Though a running job can not be preempted by any other job, but it is possible to assign higher priority to a job within the queue. Jobs that have higher priority will have access to queue's share of resources faster than jobs with lower priority. By default, priority is disabled in capacity scheduler.\cite{capacity} 
+\textbf{Job Priorities } Though a running job can not be preempted by any other job, but it is possible to assign higher priority to a job within the queue. Jobs that have higher priority will have access to queue's share of resources faster than jobs with lower priority. By default, priority is disabled in capacity scheduler. 
 
 
 \section{Fairshare Scheduler}
 
-Fairshare scheduler is pluggable MapReduce Hadoop scheduler that maintains separate queues for user groups (pools). Resources are allocated to jobs, in a way that on average every job gets fair share of resources over time. If there is single job running, then, it can utilize full resources of the cluster. For new submitted jobs, the slots that become free will be allocated, this mechanism provides opportunity that each job consume on average roughly the same amount of resources. Unlike default Hadoop scheduler that maintain queue of jobs, fairshare scheduler lets short jobs to complete in reasonable time and also it does not starve long jobs.  \cite{dynamic} \cite{fair}
+Fairshare scheduler is pluggable MapReduce Hadoop scheduler that maintains separate queues for user groups (pools). Resources are allocated to jobs, in a way that on average every job gets fair share of resources over time. If there is single job running, then, it can utilize full resources of the cluster. For new submitted jobs, the slots that become free will be allocated, this mechanism provides opportunity that each job consume on average roughly the same amount of resources. Unlike default Hadoop scheduler that maintain queue of jobs, fairshare scheduler lets short jobs to complete in reasonable time and also it does not starve long jobs.  \cite{dynamic} \cite{fair}\\
 
  
-The fairshare scheduler maintains jobs into pools, initial fair distribution of resources across multiple pools are assigned to these pools in order to limit their access to resources. In addition to provision of fair share of resources, fair share scheduler can provide minimum guaranteed amount of resources ( or computer time of CPU) to each pool to ensure that each user,pool gets sufficient amount of resources. If a pool completed its jobs and does not need the resources,excess resources is evenly distributed among other pools.\cite{fair}
- By default there is one queue per user so that all users can get equally same fraction of total resources.The setup of job pool is possible based on Unix user groups or any other jobconf property.Within each queue, jobs can be scheduled as first-in-first-out (FIFO) or fair share schedule. Fair-share can support job priority, where priority is weight that identifies fraction of total compute time for each job. In addition,  inter-queue job priority is also supported by fair-share scheduler.\cite{fair}
+The fairshare scheduler maintains jobs into pools, initial fair distribution of resources across multiple pools are assigned to these pools in order to limit their access to resources. In addition to provision of fair share of resources, fair share scheduler can provide minimum guaranteed amount of resources ( or computer time of CPU) to each pool to ensure that each user, pool gets sufficient amount of resources. If a pool completed its jobs and does not need the resources,excess resources is evenly distributed among other pools.\cite{fair}\\
+
+ By default there is one queue per user so that all users can get equally same fraction of total resources.The setup of job pool is possible based on Unix user groups or any other jobconf property.Within each queue, jobs can be scheduled as FIFO or fair share schedule. Fairshare scheduler can support job priority, where priority is weight that identifies fraction of total compute time for each job. In addition,  inter-queue job priority is also supported by fair-share scheduler.\cite{fair}
  
  
- \textbf{Task Preemption}
- 
- In the case minimum share of a pool is not provided, after waiting for certain period of time, the scheduler may kill a task from other pool(s) to provide minimum share to pool.Killing task of other jobs is called task preemption.It is also possible that preemption happen if a pool is below its half share for configurable time-out period.Usually time-out value is higher than minimum share time-out preemption.\cite{fair} 
+ \textbf{Task Preemption } In the case minimum share of a pool is not provided, after waiting for certain period of time, the scheduler may kill a task from other pool(s) to provide minimum share to pool.Killing task of other jobs is called task preemption.It is also possible that preemption happen if a pool is below its half share for configurable time-out period.Usually time-out value is higher than minimum share time-out preemption.\cite{fair} 
  
 In both cases of above preemption , the fair share scheduler kills most-recently-launched tasks from over-allocated jobs, to minimize wasted computation. Since Hadoop jobs are tolerated to losing tasks, killing tasks does not cause jobs to fail but causes them to take longer to finish.\cite{fair}
  
@@ -99,11 +84,11 @@ In both cases of above preemption , the fair share scheduler kills most-recently
 
 The goal of speculative execution is to reduce the job completion time by speculating the tasks from straggler machines. The tasks are categorized into below 3 categories. If there is free slot on a node, then a task is selected according to the category number from one of these categories.  
 
-\textbf{Failed Tasks:}  If a task fails multiple time , due to a bug and stop the job, such task is marked as "failed task" and given highest priority. 
+\textbf{Failed Tasks }  If a task fails multiple time , due to a bug and stop the job, such task is marked as "failed task" and given highest priority. 
 
-\textbf{Non-Running Tasks:} These are fresh tasks that has not being executed on any node yet. For maps, data-locality is considered and tasks that are closer to the node is performed first. 
+\textbf{Non-Running Tasks } These are fresh tasks that has not being executed on any node yet. For maps, data-locality is considered and tasks that are closer to the node is performed first. 
 
-\textbf{Speculative Tasks:} To find speculative task,the progress of task is monitored by Hadoop with a progress score between 0 and 1.Map progress depends on input data read and its progress score is fraction of input read data. The reduce phase compromise three sub phases where each sub-phase is counted as 1/3 of progress report. The three sub-phases of reduce phase is explained bellow: \\
+\textbf{Speculative Tasks } To find speculative task,the progress of task is monitored by Hadoop with a progress score between 0 and 1.Map progress depends on input data read and its progress score is fraction of input read data. The reduce phase compromise three sub phases where each sub-phase is counted as 1/3 of progress report. The three sub-phases of reduce phase is explained bellow: \\
 
 \begin{itemize}
 \item{Fetching of map outputs, also called copy phase.}
@@ -114,9 +99,7 @@ The goal of speculative execution is to reduce the job completion time by specul
 
 In each sub-phase of reduce, the score is fraction of data processed. For example, a task halfway through the copy phase has a progress score of 1/2 * 1/3 = 1/6 , while a task halfway through the reduce phase scores 1/3 + 1/3 +(1/2 * 1/3)= 5/6.
 
-\textbf{Straggler} 
-
-For map tasks and reduce tasks average of their progress score is defined as threshold by Hadoop.If progress score for a task is less then the the threshold of its category (maps or reduces) minus 0.2, and it has run for at least 2 minutes , it is marked as straggler. All the tasks \b{below,beyond?} the threshold are considered as slow and the scheduler runs at least one speculative copy of these tasks at time\cite{mat1}. 
+\textbf{Straggler}  For map tasks and reduce tasks average of their progress score is defined as threshold by Hadoop.If progress score for a task is less then the the threshold of its category (maps or reduces) minus 0.2, and it has run for at least 2 minutes , it is marked as straggler. All the tasks below the threshold are considered as slow and the scheduler runs at least one speculative copy of these tasks at time\cite{mat1}. 
  
 
 
@@ -127,15 +110,16 @@ For map tasks and reduce tasks average of their progress score is defined as thr
 
 \section{LATE Scheduler}
 
-LATE‌ is the abbreviation for scheduling algorithm of Hadoop called Longest Approximate Time to End (LATE), which is robust to heterogeneity and can improve the response time of Hadoop cluster by factor of 2\cite{mat1}. \\
+LATE‌ is the abbreviation for scheduling algorithm of Hadoop called Longest Approximate Time to End (LATE), which is robust to environment heterogeneity and can improve the response time of Hadoop cluster by factor of 2\cite{mat1}. \\
 
 The idea behind LATE‌ is to speculatively execute tasks, that are estimated to be completed in furthest  time in the future. It means, the finish time for tasks are estimated and those tasks that are going to finish in longest period of time in future, are speculatively executed. Not like normal speculative execution of tasks, where speculated tasks can be run on any machine, LATE‌ runs speculative tasks on faster nodes to complete speculative copy of task faster than original task. \\
 
 To estimate the time left for task completion, the following heuristic is used by LATE:\\
- The tasks progress is monitored by scheduler, and marked with a \i{ProgressScore}, which represents the fraction of work processed from all the work. Where map task is calculated as single task, for reduce task ,  the ProgressScore is the sum of \i{copy phase, sort phase, reduce phase}‌ where each phase represents 1/3 of total task progress. 
+ The tasks progress is monitored by scheduler, and marked with a \i{ProgressScore}, which represents the fraction of work processed from all the work. Where map task is calculated as single task, for reduce task,  the ProgressScore is the sum of \i{copy phase, sort phase, reduce phase}‌ where each phase represents 1/3 of total task progress.
+  
  The \i{ProgressRate}‌is another factor estimated for each task, which is equal to \i{ProgressScore/ T}, T is the task duration time. The task completion time is estimated based on ProgressRate of each task, which is \i{ (1 - ProgressScore/ProgressRate) }. Maybe tasks has different ProgressRate, but the assumption in LATE‌ is the tasks has same ProgressRate.\\  
   
-To run speculative tasks on fast nodes, an estimation against SlowNodeThreshold is calculated for every node, any node that are below SlowNodeThreshold is considered as slow node. Speculative tasks are only executed on fast nodes (not slow nodes) . SlowNodeThreshold is the percentile of speed comparing to total speed of nodes in cluster. Choosing percentile for SlowNodeThreshold is optional, but as per \cite{mat1} they observe better performance for setting SlowNodeThreshold to 25 percent.\\   
+To run speculative tasks on fast nodes, an estimation against SlowNodeThreshold is calculated for every node, any node that are below SlowNodeThreshold is considered as slow node. Speculative tasks are only executed on fast nodes (not slow nodes) . SlowNodeThreshold is the percentile of speed comparing to total speed of nodes in cluster. Choosing percentile for SlowNodeThreshold is optional, but as per \cite{mat1}, their observation show better performance for setting SlowNodeThreshold to 25 percent.\\   
 
  To decide how many tasks to speculate simultaneously, a threshold called SpeculativeCap is defined. The SpeculativeCap is the total number of slots where tasks can be speculatively executed. If there is less than SpeculativeCap tasks are speculative tasks are running, and there is free node to run tasks, for task assignment the following decision is made:\\
  \begin{itemize}

@@ -12,16 +12,16 @@
 
 \section{Objective of The Work}
 
-The focus of this work is on performance evaluation of Hadoop schedulers and side effects of collocated nodes. The goal of the work is to analyse the performance of the optimizations added to Hadoop schedulers such as capacity scheduler, fairshare scheduler including speculative task execution. Targeted set of scheduler is used as case study, and experiment and evaluations are done for specific schedulers. The study provides performance evaluation for capacity share scheduler and fairshare scheduler evaluation. In the context of this work, the performance of scheduler refers to job completion time in Hadoop cluster. The lower the job completion time is the better performance is evaluated and vice versa. Aside from job completion time as measure for schedulers performance, the fairness of job completion time is also evaluated. The analysis include findings about schedulers behaviour that causes performance degradation for job completion.\\
+The focus of this work is on performance evaluation of Hadoop schedulers and side effects of collocated datanodes. We analyse the performance of the optimizations added to Hadoop schedulers such as capacity share scheduler, fairshare scheduler including speculative task execution. Targeted set of schedulers is used as case study, for experiments and evaluations. The study provides performance evaluation for capacity share scheduler and fairshare scheduler performance. In the context of this work, the performance of scheduler refers to job completion time in Hadoop cluster. The lower the job completion time value is the better performance is evaluated and vice versa. Aside from job completion time as measure for schedulers performance, the fairness of job completion time is also evaluated. The analysis include findings about schedulers behaviour that causes performance degradation for job completion.\\
  
- The run of virtualized Hadoop cluster, where every VM‌ is running on one physical machine, is evaluated as baseline case. Not all the time stand alone Hadoop cluster is running on physical machines, so beside the scheduler performance in baseline, performance is analysed when two datanodes are collocated from the same cluster and when two datanodes are collocated from different clusters. The purpose of the collocated datanodes is to analyse how the placement of Hadoop nodes can affect the performance of the Hadoop. 
+ The run of virtualized Hadoop cluster, where every VM‌ is running on one physical machine, is evaluated as baseline case. Not all the time stand alone datanode on physical machine forms Hadoop cluster, so beside the scheduler performance in baseline, performance is analysed when two datanodes are collocated from the same cluster and when two datanodes are collocated from different clusters. The purpose of the collocated datanodes cases are to analyse how the placement of Hadoop nodes can affect the performance of the Hadoop. 
 
 
 \section{Methodology}
 
-The goal of the work is to analyse Hadoop schedulers performance and side effects of collocated Hadoop datanodes. To achieve the goal, a placement strategy and set of schedulers  are defined for the experiments. In this thesis, an experiment consist of set of schedulers, along with node placement strategy with workload execution on experimental environment. \\
+The goal of the work is to analyse Hadoop schedulers performance and side effects of collocated Hadoop datanodes. To achieve the goal, a placement strategy and set of schedulers are defined for the experiments. In this thesis, an experiment consist of set of schedulers, along with node placement strategy and workload execution on experimental environment. \\
 
-The optimized schedulers that are selected for all the experiment are capacity share and fair-share schedulers. These schedulers are selected because they both provide the opportunity for multi-tenancy of resources among organizations. In addition to default behaviour of scheduler which performs speculative task execution, the non speculative behaviour of the schedulers are also evaluated. Overall, the scheduler set includes two schedulers in two different status which forms four cases in total:\\
+The optimized selected Hadoop schedulers for all the experiment are capacity share and fairshare schedulers. These schedulers are selected because they both provide the opportunity for multi-tenancy of resources among organizations. In addition to default behaviour of scheduler which performs speculative task execution, the non speculative behaviour of the schedulers are also evaluated. Overall, the scheduler set includes two schedulers in two different status which forms four cases in total:\\
  \begin{itemize}
  \item{Capacity share scheduler with speculative task execution which is referred as "cpt" in plots.}
  \item{Capacity share scheduler without speculative task execution which is referred as "cpf" in plots.}
@@ -29,61 +29,61 @@ The optimized schedulers that are selected for all the experiment are capacity s
  \item{Fair-share scheduler without speculative task execution which is referred as "fsf" in plots.}
  \end{itemize}
 	
-The placement strategy is about where to locate the datanodes and consist of three different cases of baseline,collocated datanodes, collocated clusters.\\
+The placement strategy is about where to locate the datanodes and consists three different cases of baseline,collocated datanodes, collocated clusters.\\
 
-\textbf{Baseline } In this case, Hadoop nodes are placed as one node per physical machine. Not any machine is shared between two datanodes. The experiment is evaluated for the complete set of Hadoop schedulers used as baseline. The result of the experiment from baseline case is used as base performance of schedulers and two more cases are compared to baseline to find the effect of collocation of datanodes.  In total there is single Hadoop cluster running on bare-bone hardware using VMs.\\ 
+\textbf{Baseline } In this case, Hadoop datanodes are placed as one node per physical machine. Not any machine is shared between two datanodes. The experiment is evaluated for the complete set of Hadoop schedulers. The results of the experiment in baseline case is used as base performance of schedulers and two more cases are compared to baseline to find the effect of collocation of datanodes.  In total there is single Hadoop cluster running on bare-bone hardware using VMs.\\ 
  
-\textbf{Collocated Datanodes} This is the case where more than one datanodes are placed on one physical machine. In total two datanodes are placed on single physical machine. Both datanodes located on one physical belongs to same Hadoop cluster. The goal is to find out how collocation of data nodes from same Hadoop cluster can affect the performance of Hadoop scheduler?, In total there is single Hadoop cluster running with two datanodes on every machine using VMs. \\
+\textbf{Collocated Datanodes} This is the case where more than one datanodes are placed on one physical machine. In total two datanodes are placed on single physical machine. Both datanodes located on one physical machine belongs to the same Hadoop cluster. The goal is to find out how collocation of datanodes from same Hadoop cluster can affect the performance of Hadoop scheduler. In total there is single Hadoop cluster running with two datanodes using VMs on every physical machine. \\
  
-\textbf{Collocated Hadoop Clusters } The collocated Hadoop cluster is similar to Collocated datanodes case with difference that it has two Hadoop clusters launched on computational resources. In this case a total of two datanodes share a single physical where each datanode belongs to a separate Hadoop cluster. The goal of this placement is to analyse the performance impact of datanode from one cluster on the datanode from another cluster. In total two there are two Hadoop clusters running  with two datanodes of different cluster on every physical machine using VMs.\\  
+\textbf{Collocated Hadoop Clusters } The collocated Hadoop cluster is similar to Collocated datanodes case with the difference that it has two Hadoop clusters launched on computational resources. In this case a total of two datanodes share a single physical machine where each datanode belongs to a separate Hadoop cluster. The goal of this placement is to analyse the performance impact of datanode from one cluster on the datanode from another cluster. In total there are two Hadoop clusters running  with two datanodes of different cluster on every physical machine using VMs.\\  
 
-\textbf{Fairness } Fairness represents the time difference between job all job completion time. The fairness is calculated as maximum job completion time minus minimum job completion time for each run during experiment. \\
+\textbf{Fairness } Fairness is evaluated as time difference between job completion times for all the submitted jobs. The fairness is calculated as maximum job completion time minus minimum (max - min) job completion time for each run during experiment. \\
 
-The total number of VMs used in baseline and collocated datanodes are equal. While in baseline every datanode VM is spawned on one physical machine and in collocated datanodes two datanode VMs are placed on one physical machine. The total number of physical machines in collocated datanodes case, used for datanodes placement  is half of the number of physical machines used for datanodes in baseline case. The collocated cluster case is similar to run of two baseline at the same time. It means, each Hadoop cluster in collocated cluster case is exactly the same as single baseline Hadoop cluster.  
+The total number of VMs used in baseline and collocated datanodes are equal. While in baseline case every datanode VM is spawned and running on one physical machine and in collocated datanodes case two datanode VMs are placed on one physical machine. The total number of physical machines in collocated datanodes case, used for datanodes placement  is half of the number of physical machines used for datanodes in baseline case (because single physical machine was shared for two collocated datanodes). The collocated cluster case is similar to run of two baseline at the same time. It means, each Hadoop cluster in collocated cluster case is exactly the same as single baseline Hadoop cluster for which two nodes of different clusters are collocated on a single physical machine.  
   
 
 
 \section{Work Scope}
 
-The scope of the thesis is limited to few cases of Hadoop optimizations, and node placement effects. The results of the thesis is limited to experimental environment,used workloads, tools, softwares, and physical machines. The results from this thesis does not guarantee that Hadoop optimization will have same results in every other scenario or environment. Some limitation of the work is explained in next paragraphs. \\
-
- This thesis addresses the performance evaluation and side effects of Hadoop optimizations. The optimization refers to optimized Hadoop schedulers like capacity scheduler, fairshare scheduler, and speculative task execution. The schedulers can be configured in different ways like queue configuration, assigning percentile of resources and so on, but this thesis work is limited to default queue configuration of the schedulers. The only change of parameter is the number of reducers changed for experiments. I select YARN‌ as optimized Hadoop version, and tested all the schedulers  using YARN. \\
-
-The side effects here stands for effect of multiple nodes sharing the same physical machine. I placed two datanodes running on two VMs on top single physical machine to see how the datanodes placement have side effects on Hadoop performance. The placement of two datanodes from same cluster and from different clusters were tested to see the difference of side effects for each case.It is possible to configure namenode in a way, to act as both namenode and datanode. In the experiments , the namenode was only acting as namenode (not as datanode). The performance of scheduler is evaluated for the cases where all the datanodes are processing the data. The results of evaluation and side effects of Hadoop optimization is also limited by submitted jobs size and types.\\
-
-There is single workload "terasort" used as workload and terasort benchmark is used for the performance evaluation of the schedulers. So, the results of the thesis is limited to "terasort" workload and this result may vary for Hadoop schedulers performance using other benchmarks. The thesis result is limited to results for used Ubuntu VMs on specified set of physical machine.  All the experiments were executed using Ubuntu VM and it was not ran on bare-bone hardware. it is possible that running the same experiments on bare-bone hardware provide different results.\\
 
 
+ This thesis addresses the performance evaluation and side effects of Hadoop optimizations. The optimization refers to optimized Hadoop schedulers like capacity scheduler, fairshare scheduler, and speculative task execution. The schedulers can be configured tuning various settings like queue configuration, assigning percentile of resources and so on, but this thesis work is limited to default queue configuration of the schedulers. The only change of parameter is the number of reducers changed for experiments. I select YARN‌ as optimized Hadoop version, and tested all the schedulers  using Hadoop YARN. \\
+ 
+
+
+The side effects here stands for effect of multiple nodes sharing the same physical machine. We placed two datanodes running on two VMs on top single physical machine to see how the datanodes placement have side effects on Hadoop performance. The placement of two datanodes from same cluster and from different clusters were analysed to see the difference of side effects for each case. It is possible to configure namenode in a way, to act as namenode and datanode simultaneously, but in the experiments , the namenode was only acting as namenode (not as datanode). The performance of scheduler is evaluated for the duration where terasort is processing to sort the generated data. The results of evaluation and side effects of Hadoop optimization is also limited by submitted jobs size and types.\\
+
+There was single workload "teragent" used as workload generator and terasort benchmark is used for sorting the generated data and performance evaluation of the schedulers. Hence, the results of the thesis is limited to "terasort" workload and this result may not be the same for Hadoop schedulers performance using other workloads. The thesis result is limited to results for used Ubuntu VMs on specified set of physical machine.  All the experiments were executed using Ubuntu VM and it was not ran on bare-bone hardware.\\
+
+ The scope of the thesis is limited to cases of Hadoop optimizations explained in methodology section of this chapter, and node placement effects. The results of the thesis is limited to experimental environment, used workloads, tools, soft-wares, and physical machines. The results from this thesis does not guarantee the same results in every other scenario or environment for Hadoop optimization. \\
 
 \section{Experimental Environment}
 
-The experiments are executed on test-bed environment. The environment consist of resources: physical machines, Ubuntu operating system, Hadoop application, OpenStack and tools/scripts to process and analyse the log data.\\
+The experiments are executed on test-bed environment. The environment consist resources such as physical machines, Ubuntu operating system, Hadoop application, OpenStack and tools/scripts to process and analyse the log data.\\
 
 
-Each experiment consist spawning and installation of Ubuntu 12.10 Virtual machine on top of physical machines. For all the experiments, Hadoop-snap-shot-3 is configured and used as instance of Hadoop application to form Hadoop cluster.  After completion of Hadoop setup, using terasort, workload is generated and stored on datanodes. Once, the workload generation is completed, the terasort starts process to sort the data using Hadoop's scheduler. The performance of each and every scheduler for every placement strategy is analysed for the time duration that terasort sorts the generated workload. A set of metrics like job start time, end time, number of mappers and reducers, number of killed tasks, etc are collected for further analysis.\\    
+Each experiment consist spawning and installation of Ubuntu 12.10 Virtual machine on top of physical machines. For all the experiments, Hadoop-snap-shot-3 is configured and used as instance of Hadoop YARN application.  After completion of Hadoop setup, using teragen workload was generated and using terasort generated workload was sorted and stored on datanodes. Once, the workload generation is completed, the terasort starts process to sort the data using Hadoop's scheduler. The performance of each and every scheduler for every placement strategy is analysed for the time duration that terasort sorts the generated workload. A set of metrics like job start time, end time, number of mappers and reducers, number of killed tasks, etc were collected for further analysis.\\    
 
-For management of VMs, including installation and deletion, OpenStack software is used as tool. To automate the process of installation, configuration of VMs and nodes, and running terasort on Hadoop cluster, python scripts are used. The bash scripts collects the required metrics from the logs generated from Hadoop's performance. For further process and analysis of collected metrics, R was use as tool to analyse and plot the log data. The scripts are appended at the end of thesis to appendix.  
+For management of VMs including installation and deletion, OpenStack software was used as tool. To automate the process of installation, configuration of VMs and running terasort on Hadoop cluster, python scripts were used. The bash scripts collects the required metrics from the logs generated from Hadoop's performance. For further process and analysis of collected metrics, R was use as tool to analyse and plot the log data. 
 
 
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
 \subsection{Physical Resources}
-A total number of seven(7) computer machines connected through central switch is used to run the experiments. All the computers are connected using Gigabit Ethernet port to the switch. Each computer has sixteen(16)GB of RAM(Random Access Memory). The computers are equipped with eight(8) CPUs(Central Processing Unit), where the speed of each CPU is approximately 2,3 GHZ.The system uses 10 GB of disk space to store the virtual machine and Hadoop software. Additional mounted hard disk space of seventy two(72) GB is provided as NFS(Network File System) storage to each computer. 
+A total number of seven(7) computer machines connected through central switch is used to run the experiments. All the computers are connected using Gigabit Ethernet port to the switch. Each computer sixty four (64) GB of RAM(Random Access Memory). The computers are equipped with eight(8) CPUs(Central Processing Unit), where the speed of each CPU is approximately 2,3 GHZ. The system uses 10 GB of disk space to store the virtual machine and Hadoop software. Additional mounted hard disk space of seventy two(72) GB is provided as NFS(Network File System) storage to each computer. 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \subsection{Terasort}
-Terasort is a benchmark tool used to sort large set of generated data. It is a standard tool to generate and sort large data sets using random data. The tool was used by Yahoo!‌ at 2009 to sort one terabyte of data on 9000 machines using Hadoop. The two core component of terasort is Teragen and Terasort. 
+Terasort is a benchmark tool used to sort large set of generated data. It is a standard tool to generate and sort large data sets using random data. The two core component of terasort is Teragen and Terasort. 
 
-\textbf{Teragen} - Generates the random data that is used as input data for terasort.The data is generated in rows and the format of 
-row is "<10 bytes key><10 bytes row-id><78 bytes filler>". 
-The keys are random characters from the set ‘ ‘ .. ‘~’, row-id is justified row id as a int and the filler consists of 7 runs of 10 characters from "A" to "Z". Teragen divides the number of rows by the desired number of tasks and assigns set of rows to each map.\ref{TeraByte Sort on Apache Hadoop Owen O’MalleyYahoo!}
+\textbf{Teragen}  Generates the random data that is used as input data for terasort.The data is generated in rows and the format of row is $"<10 bytes key><10 bytes row-id><78 bytes filler>"$. 
+The keys are random characters and row-id is justified as a int and the filler consists of seven (7) runs of ten (10) characters from "A" to "Z". Teragen divides the number of rows by the desired number of tasks and assigns set of rows to each map.
 
-
-\textbf{TeraSort} - It is implemented as a MapReduce sort job with a custom partitioner that uses a sorted list of n-1 sampled keys that define the key range for each reduce.
+\textbf{TeraSort} It is implemented as a MapReduce sort job with a custom partitioner that uses a sorted list of n-1 sampled keys that define the key range for each reduce.
 
 
 %----------------------------------------------------------------------------------------
@@ -96,17 +96,16 @@ The keys are random characters from the set ‘ ‘ .. ‘~’, row-id is justif
 
 \subsection{OpenStack}
 
-OpenStack is developed by developers of cloud computing, it is open standard cloud operating system for public and private cloud operators. OpenStack consists of three core components:OpenStack Compute (code-name Nova), OpenStack Object Storage (code-name Swift), and OpenStack Image Service (code-name Glance).
+As explained in \cite{openstack}, OpenStack is developed by developers of cloud computing, it is open standard cloud operating system for public and private cloud operators. OpenStack consists of three core components:OpenStack Compute (code-name Nova), OpenStack Object Storage (code-name Swift), and OpenStack Image Service (code-name Glance).
 
 
-\textbf{OpenStack compute} The OpenStack compute is designed to provision and manage large cluster of virtual machines. The software provides control panel for running instances, managing network and control of access via users.
+\textbf{OpenStack compute } The OpenStack compute is designed to provision and manage large cluster of virtual machines. The software provides control panel for running instances, managing network and control of access via users.
  
-\textbf{OpenStack Object Storage} The OpenStack Object Storage is used for creating petabytes of accessible data. It is a system for long term storage of large amount of static data. The data can be leveraged,updated or retrieved.For better scalability and redundancy, the data is stored in distributed manner with no central point of failure.
+\textbf{OpenStack Object Storage } The OpenStack Object Storage is used for creating petabytes of accessible data. It is a system for long term storage of large amount of static data. The data can be leveraged,updated or retrieved.For better scalability and redundancy, the data is stored in distributed manner with no central point of failure.
 
-\textbf{OpenStack Imaging Service} Using image services, the clients can register new disk images.The image discovery is designed to facilitate the discovery,registration and delivery services of virtual disk to the users.               
+\textbf{OpenStack Imaging Service } Using image services, the clients can register new disk images. The image discovery is designed to facilitate the discovery,registration and delivery services of virtual disk to the users.               
               
  
-The software called "OpenStack" is used as tool to create,store and manage virtual machines. We use it for our experiments. Initially, we spawned only Ubuntu VMs and configured it for Hadoop cluster to run terasort workload. After making sure, that VMs are running properly and sorts the workload, we create an image from  running VM to use it for further experiments. Basically, images are similar to clone of Ubuntu system that is capable to reboot, install, and configure for Hadoop clusters. Though, there were only Ubuntu virtual machine used for experiments but, within Ubuntu two different virtual machines images were configured which was called "Hadoop namenode image" and "Hadoop datanode image". Respectively, the images were spawned, configured and used to act as namenode and datanodes for experiments.\\ 
+The software called "OpenStack" is used as tool to create, store and manage virtual machines. We use it for our experiments. Initially, we spawn only Ubuntu VMs and configured it for Hadoop cluster to run terasort workload. After making sure, that VMs are running properly and sorts the workload, we create an image from  running VM to use it as VM instance for further experiments. Basically, images are similar to clone of Ubuntu system that is capable to reboot, install, and configure for Hadoop clusters. Though, there were only Ubuntu VM used for experiments, but within Ubuntu two different virtual machines images were configured which was called "Hadoop namenode image" and "Hadoop datanode image". Respectively, the images were spawned, configured and used to act as namenode and datanodes for experiments.\\ 
 
-\subsection{Ubuntu Virtual Machine}
 

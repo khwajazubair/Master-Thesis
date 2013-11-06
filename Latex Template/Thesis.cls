@@ -179,7 +179,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{An Analysis of Side-effects of Hadoop Optimizations in the Data-center} % Your thesis title - this is used in the title and abstract
+\thesistitle{Side-effect Analysis of MapReduce Optimization in the Data-center} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Prof. Anja \textsc{Feldmann} \\ Prof. Kao \textsc{Odej}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
@@ -196,12 +196,12 @@
 \keywords{} % Keywords for your thesis - this is not currently used anywhere in the template, cite it with \keywordnames if you want it
 %-------------------------------------------------   
 \university{\texorpdfstring{\href{http://www.tu-berlin.de} % Your university's URL
-                {Technical University of Berlin (TU Berlin)}} % Your university's name - this is currently used in the title page
-                {Technical University of Berlin (TU Berlin)}}
+                {Technical University of Berlin}} % Your university's name - this is currently used in the title page
+                {Technical University of Berlin }}
 %-------------------------------------------------   
 \UNIVERSITY{\texorpdfstring{\href{http://www.tu-berlin.de} % Your university's URL
-                {TECHNICAL UNIVERSITY OF BERLIN (TU BERLIN)}} % Your university's name in capitals - this is currently used in the abstract page
-                {TECHNICAL UNIVERSITY OF BERLIN (TU BERLIN)}}
+                {TECHNICAL UNIVERSITY OF BERLIN}} % Your university's name in capitals - this is currently used in the abstract page
+                {TECHNICAL UNIVERSITY OF BERLIN }}
 %-------------------------------------------------                
 \department{\texorpdfstring{\href{http://www.eecs.tu-berlin.de/menue/einrichtungen/institute/its/} % Your department's URL
                 {Department of Telecommunication Systems}} % Your department's name - used in the title page and abstract

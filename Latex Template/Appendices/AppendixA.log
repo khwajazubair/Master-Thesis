@@ -1,0 +1,4161 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.3.21)  4 NOV 2013 14:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**AppendixA.tex
+(./AppendixA.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
+ai, loaded.
+! Undefined control sequence.
+l.3 \chapter
+            {Hadoop} % Main appendix title
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \chapter{H
+              adoop} % Main appendix title
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[] 
+ []
+
+! Undefined control sequence.
+l.7 \lhead
+          {Appendix A. \emph{Appendix Title Here}} % This is for the header ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \lhead{A
+            ppendix A. \emph{Appendix Title Here}} % This is for the header ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
+[]
+ []
+
+
+Overfull \hbox (16.12212pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 Ap-
+ []
+
+
+Overfull \hbox (27.63872pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 pendix
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 Ti-
+ []
+
+
+Overfull \hbox (10.47769pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 tle
+ []
+
+
+Overfull \hbox (21.0901pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 Here 
+ []
+
+! Undefined control sequence.
+l.9 \section
+             {$Python Scripts: Hadoop_utils.py file$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \section {$
+               Python Scripts: Hadoop_utils.py file$}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+
+Overfull \hbox (91.44864pt too wide) in paragraph at lines 9--10
+[]$\OML/cmm/m/it/10 PythonScripts \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (84.81866pt too wide) in paragraph at lines 9--10
+\OML/cmm/m/it/10 Hadoop[]tils:pyfile$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 $
+      from interact import *
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (115.62202pt too wide) in paragraph at lines 11--18
+[]$\OML/cmm/m/it/10 frominteractimport \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (105.42464pt too wide) in paragraph at lines 11--18
+\OML/cmm/m/it/10 fromplacementimport \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (325.41254pt too wide) in paragraph at lines 11--18
+\OML/cmm/m/it/10 importinteractimporttimeimportsysfrommultiprocessingimportProc
+ess$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 $
+       $def spawn_hadoop_vms(num_hadoop,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 $ $def spawn_
+                  hadoop_vms(num_hadoop,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--23
+[]$$
+ []
+
+
+Overfull \hbox (233.72165pt too wide) in paragraph at lines 19--23
+[]\OML/cmm/m/it/10 adoop[]ms\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 num[]adoop; exp[]
+umber; placement[]ap\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (238.2812pt too wide) in paragraph at lines 19--23
+\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 SpawnsHadoopVMsaccordingtoplacement[]ap\OT1
+/cmr/m/n/10 """$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24     $
+          HADOOP_HOSTNAME_PREFIX = "hadoop-\%s" \% exp_number
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (186.5641pt too wide) in paragraph at lines 24--25
+[]$\OML/cmm/m/it/10 HADOOP[]OSTNAME[]REFIX \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.75586pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (75.44235pt too wide) in paragraph at lines 24--25
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 exp[]umbe
+r$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27     s
+          ync_glance_index()
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27     sync_
+              glance_index()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (144.44339pt too wide) in paragraph at lines 27--29
+[]$[]\OML/cmm/m/it/10 lance[]ndex\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 sync[]ova[]
+ist\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30   $
+          nova_boot(IMAGE_MAP["hadoop-nn-v3"],
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in math mode.
+l.33     #
+          time.sleep(60)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.34 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (171.98836pt too wide) in paragraph at lines 30--34
+[]$\OML/cmm/m/it/10 nova[]oot\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IMAGE[]AP\OT1/cm
+r/m/n/10 ["\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (19.7825pt too wide) in paragraph at lines 30--34
+\OML/cmm/m/it/10 nn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (186.21463pt too wide) in paragraph at lines 30--34
+\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 3"]\OML/cmm/m/it/10 ; HADOOP[]OSTNAME[]REFIX 
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 30--34
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (36.66669pt too wide) in paragraph at lines 30--34
+\OT1/cmr/m/n/10 1"\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/c
+mr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (66.48018pt too wide) in paragraph at lines 30--34
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 availability \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (31.15166pt too wide) in paragraph at lines 30--34
+\OML/cmm/m/it/10 zone \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.89697pt too wide) in paragraph at lines 30--34
+\OML/cmm/m/it/10 nova \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (167.5035pt too wide) in paragraph at lines 30--34
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 placement
+[]ap\OT1/cmr/m/n/10 [1])\OML/cmm/m/it/10 time:sleep\OT1/cmr/m/n/10 (60)$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 $
+          $for i in range(2, num_hadoop + 1):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 $    $for i in range(2, num_
+                                 hadoop + 1):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--39
+[]$$
+ []
+
+
+Overfull \hbox (38.17601pt too wide) in paragraph at lines 35--39
+[]\OML/cmm/m/it/10 adoop \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (14.44441pt too wide) in paragraph at lines 35--39
+\OT1/cmr/m/n/10 1) :
+ []
+
+
+Overfull \hbox (151.98836pt too wide) in paragraph at lines 35--39
+\OML/cmm/m/it/10 nova[]oot\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IMAGE[]AP\OT1/cmr/m
+/n/10 ["\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (18.98502pt too wide) in paragraph at lines 35--39
+\OML/cmm/m/it/10 dn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (186.21463pt too wide) in paragraph at lines 35--39
+\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 2"]\OML/cmm/m/it/10 ; HADOOP[]OSTNAME[]REFIX 
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 35--39
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (56.46602pt too wide) in paragraph at lines 35--39
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 i; \OT1/c
+mr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (66.48018pt too wide) in paragraph at lines 35--39
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 availability \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (31.15166pt too wide) in paragraph at lines 35--39
+\OML/cmm/m/it/10 zone \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.89697pt too wide) in paragraph at lines 35--39
+\OML/cmm/m/it/10 nova \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (102.68849pt too wide) in paragraph at lines 35--39
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 placement
+[]ap\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 ])$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40  $
+          # Check to see if all VMs have booted
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in math mode.
+l.40  $   #
+            Check to see if all VMs have booted
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (204.74487pt too wide) in paragraph at lines 40--43
+[]$\OML/cmm/m/it/10 ChecktoseeifallVMshavebootedretries \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (53.654pt too wide) in paragraph at lines 40--43
+\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 success \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.40286pt too wide) in paragraph at lines 40--43
+\OML/cmm/m/it/10 True$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44     w
+          hile (retries != 0):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ! in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47         sync_
+                  nova_list()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--52
+[]
+ []
+
+
+Overfull \hbox (169.75366pt too wide) in paragraph at lines 44--52
+[]\OML/cmm/m/it/10 ova[]ist\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 foriinrange\OT1/c
+mr/m/n/10 (1\OML/cmm/m/it/10 ; num[]adoop \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (14.44441pt too wide) in paragraph at lines 44--52
+\OT1/cmr/m/n/10 1) :
+ []
+
+
+Overfull \hbox (191.55338pt too wide) in paragraph at lines 44--52
+\OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 notHADOOP[]OSTNAME[]REFIX 
+\OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 44--52
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (116.08989pt too wide) in paragraph at lines 44--52
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 iinACTIVE
+[]AP\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (43.65398pt too wide) in paragraph at lines 44--52
+\OML/cmm/m/it/10 success \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.62968pt too wide) in paragraph at lines 44--52
+\OML/cmm/m/it/10 False$
+ []
+
+
+Overfull \hbox (24.54402pt too wide) in paragraph at lines 44--52
+\OML/cmm/m/it/10 break$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53         i
+              f (success is False):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--59
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60         e
+              lse:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--62
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63     $
+          if (success is False):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (109.61147pt too wide) in paragraph at lines 63--69
+[]$\OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 successisFalse\OT1/cmr/
+m/n/10 ) :
+ []
+
+
+Overfull \hbox (325.65614pt too wide) in paragraph at lines 63--69
+\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 CouldnotbootallVMs:Exit
+ing\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 printACTIVE[]APsys:exit\OT1/cmr/m/n/10 (1)
+\OML/cmm/m/it/10 else \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (104.78206pt too wide) in paragraph at lines 63--69
+\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 VMshavebooted\OT1/cmr/m
+/n/10 "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 $
+       $def setup_hadoop(num_hadoop,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 $ $def setup_
+                  hadoop(num_hadoop,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 71--74
+[]$$
+ []
+
+
+Overfull \hbox (208.51315pt too wide) in paragraph at lines 71--74
+[]\OML/cmm/m/it/10 adoop\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 num[]adoop; exp[]umbe
+r; pm; schedule\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (238.2812pt too wide) in paragraph at lines 71--74
+\OT1/cmr/m/n/10 """\OML/cmm/m/it/10 SpawnsHadoopVMsaccordingtoplacement[]ap\OT1
+/cmr/m/n/10 """$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75     H
+          ADOOP_HOSTNAME_PREFIX = "hadoop-\%s" \% exp_number
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no H in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no P in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.75     HADOOP_
+                HOSTNAME_PREFIX = "hadoop-\%s" \% exp_number
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (139.15094pt too wide) in paragraph at lines 75--77
+[]$[]\OML/cmm/m/it/10 OSTNAME[]REFIX \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.75586pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (150.12073pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 exp[]umbe
+rHADOOP[]N \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (163.78639pt too wide) in paragraph at lines 75--77
+\OML/cmm/m/it/10 HADOOP[]OSTNAME[]REFIX \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 1"$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78     s
+          ync_nova_list()
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78     sync_
+              nova_list()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.79 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (63.37346pt too wide) in paragraph at lines 78--79
+[]$[]\OML/cmm/m/it/10 ova[]ist\OT1/cmr/m/n/10 ()$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.80     #
+          
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.81     #
+           Setup slaves file
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81     # S
+            etup slaves file
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! You can't use `macro parameter character #' in horizontal mode.
+l.82     #
+          
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.83     slaves_
+                file = open('slaves_\%s' \% (exp_number), 'w')
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.84 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--84
+[]
+ []
+
+
+Overfull \hbox (27.02156pt too wide) in paragraph at lines 81--84
+[]\OML/cmm/m/it/10 ile \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (156.06978pt too wide) in paragraph at lines 81--84
+\OML/cmm/m/it/10 open\OT1/cmr/m/n/10 ([]\OML/cmm/m/it/10 slaves[]s[]\OT1/cmr/m/
+n/10 %(\OML/cmm/m/it/10 exp[]umber\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;[] w[]\OT1
+/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85     f
+          or i in range(2, num_hadoop + 1):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.85     for i in range(2, num_
+                               hadoop + 1):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.86 ...HADOOP_HOSTNAME_PREFIX + "-\%s" \% i + "\n
+                                                  ")
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 85--87
+[]
+ []
+
+
+Overfull \hbox (38.17601pt too wide) in paragraph at lines 85--87
+[]\OML/cmm/m/it/10 adoop \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (14.44441pt too wide) in paragraph at lines 85--87
+\OT1/cmr/m/n/10 1) :
+ []
+
+
+Overfull \hbox (238.553pt too wide) in paragraph at lines 85--87
+\OML/cmm/m/it/10 slaves[]ile:write\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]OST
+NAME[]REFIX \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 85--87
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (37.57716pt too wide) in paragraph at lines 85--87
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 i \OT1/cm
+r/m/n/10 +
+ []
+
+
+Overfull \hbox (13.88893pt too wide) in paragraph at lines 85--87
+\OT1/cmr/m/n/10 "")$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88     s
+          laves_file.close()
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88     slaves_
+                file.close()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.89 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (68.72076pt too wide) in paragraph at lines 88--89
+[]$[]\OML/cmm/m/it/10 ile:close\OT1/cmr/m/n/10 ()$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90     s
+          cp_file_to_host("slaves_\%s" \% (exp_number), get_ip_for_instance(...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90     scp_
+             file_to_host("slaves_\%s" \% (exp_number), get_ip_for_instance(...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (340.0351pt too wide) in paragraph at lines 90--93
+[]$[]\OML/cmm/m/it/10 ile[]o[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 slaves[]s\O
+T1/cmr/m/n/10 "%(\OML/cmm/m/it/10 exp[]umber\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
+ get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 
+) +
+ []
+
+
+Overfull \hbox (57.08908pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 " :  []\OML/cmm/m/it/10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (436.21474pt too wide) in paragraph at lines 90--93
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop=slaves\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 e
+xecute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
+0 "\OML/cmm/m/it/10 sudochmoda \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (61.68875pt too wide) in paragraph at lines 90--93
+\OML/cmm/m/it/10 rwx []=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (125.40907pt too wide) in paragraph at lines 90--93
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 90--93
+\OT1/cmr/m/n/10 ")$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94     i
+          f (schedule == "fair"):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no " in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 94--96
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98           e
+                xecute_on_vm(get_ip_for_instance(HADOOP_NN), "cd ~/hadoop-3....
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.98           execute_
+                       on_vm(get_ip_for_instance(HADOOP_NN), "cd ~/hadoop-3....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (256.70476pt too wide) in paragraph at lines 98--100
+[]$[]\OML/cmm/m/it/10 n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; 
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 cd []=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 98--100
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (141.20076pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 rm \OMS/
+cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (33.90637pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 ryarn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (320.23918pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 site:xml\OT1/cmr/m/n/10 ; ")\OML/cmm/m/it/10 execute[]n[]m\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it
+/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it
+/10 cd []=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 98--100
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (158.32927pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 cpyarn \
+OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (24.17781pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 site \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (68.50786pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 fair:xmlyarn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (45.74269pt too wide) in paragraph at lines 98--100
+\OML/cmm/m/it/10 site:xml\OT1/cmr/m/n/10 ")$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.102           #
+                 scp_file_to_host("/home/routerlab/zubair-side-effects/workl...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102           #s
+                  cp_file_to_host("/home/routerlab/zubair-side-effects/workl...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102           #scp_
+                     file_to_host("/home/routerlab/zubair-side-effects/workl...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.103           #
+                            + ":~/hadoop-3.0.0-SNAPSHOT/etc/hadoop")
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.104 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (188.67665pt too wide) in paragraph at lines 102--104
+[]$[]\OML/cmm/m/it/10 ile[]o[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 =home=route
+rlab=zubair \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (25.77156pt too wide) in paragraph at lines 102--104
+\OML/cmm/m/it/10 side \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (165.56364pt too wide) in paragraph at lines 102--104
+\OML/cmm/m/it/10 effects=workload=schedulars=fair \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (226.84087pt too wide) in paragraph at lines 102--104
+\OML/cmm/m/it/10 schedular:xml\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; get[]p[]or[]n
+stance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 ) +
+ []
+
+
+Overfull \hbox (57.08908pt too wide) in paragraph at lines 102--104
+\OT1/cmr/m/n/10 " :  []\OML/cmm/m/it/10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 102--104
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (124.29796pt too wide) in paragraph at lines 102--104
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop\OT1/cmr/m/n/10 ")$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105     e
+           lif (schedule =="capacity"):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no " in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 105--107
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109     e
+           lse:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 109--112
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117     s
+           cp_file_to_host(pm["mapred-site.xml"], get_ip_for_instance(HADOOP...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117     scp_
+              file_to_host(pm["mapred-site.xml"], get_ip_for_instance(HADOOP...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.122 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (130.16537pt too wide) in paragraph at lines 117--122
+[]$[]\OML/cmm/m/it/10 ile[]o[]ost\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pm\OT1/cmr/m
+/n/10 ["\OML/cmm/m/it/10 mapred \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (202.95604pt too wide) in paragraph at lines 117--122
+\OML/cmm/m/it/10 site:xml\OT1/cmr/m/n/10 "]\OML/cmm/m/it/10 ; get[]p[]or[]nstan
+ce\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 ) +
+ []
+
+
+Overfull \hbox (57.08908pt too wide) in paragraph at lines 117--122
+\OT1/cmr/m/n/10 " :  []\OML/cmm/m/it/10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 117--122
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (161.93463pt too wide) in paragraph at lines 117--122
+\OML/cmm/m/it/10 SNAPSHOT=etc=hadoop=mapred \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (283.85379pt too wide) in paragraph at lines 117--122
+\OML/cmm/m/it/10 site:xml\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 execute[]n[]m\OT1/c
+mr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/1
+0 rm \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (430.42638pt too wide) in paragraph at lines 117--122
+\OML/cmm/m/it/10 rparse[]erasort[]ogs:py\OT1/cmr/m/n/10 ; ")\OML/cmm/m/it/10 sc
+p[]ile[]o[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 parse[]erasort[]ogs:py\OT1/cmr
+/m/n/10 "\OML/cmm/m/it/10 ; get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 HADOOP[]N\OT1/cmr/m/n/10 ) +
+ []
+
+
+Overfull \hbox (118.66328pt too wide) in paragraph at lines 117--122
+\OT1/cmr/m/n/10 " :  []\OML/cmm/m/it/10 =parse[]erasort[]ogs:py\OT1/cmr/m/n/10 
+")$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124     e
+           xecute_on_vm(get_ip_for_instance(HADOOP_NN), "hdfs namenode -form...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.124     execute_
+                  on_vm(get_ip_for_instance(HADOOP_NN), "hdfs namenode -form...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.132    #
+           execute_on_vm(get_ip_for_instance(HADOOP_NN), "sudo useradd user1...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.133     #
+                                                         sudo useradd user5;")
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.134 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (276.58916pt too wide) in paragraph at lines 124--134
+[]$[]\OML/cmm/m/it/10 n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; 
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hdfsnamenode \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (302.69456pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 format\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 execute[]n[]m\OT1/cmr
+/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
+HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 " []\OML/cmm/m/it/
+10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 124--134
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (129.01854pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 SNAPSHOT=sbin=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (509.47263pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 daemon:shstartnamenode\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 time:
+sleep\OT1/cmr/m/n/10 (5)\OML/cmm/m/it/10 execute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm
+/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr
+/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 HADOOP[]SH[]PTS \
+OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (157.41891pt too wide) in paragraph at lines 124--134
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 i=home=ubuntu=:ssh=hadoop[]sa \OMS/cmsy/m/
+n/10 ^^@
+ []
+
+
+Overfull \hbox (80.82085pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 lubuntu[] []=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 124--134
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (129.01854pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 SNAPSHOT=sbin=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (384.18312pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 daemons:shstartdatanode\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 exec
+ute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "
+ []\OML/cmm/m/it/10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 124--134
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (119.3797pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 SNAPSHOT=sbin=yarn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (542.44377pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 daemon:shstartresourcemanager\OT1/cmr/m/n/10 ")\OML/cmm/m/it/1
+0 time:sleep\OT1/cmr/m/n/10 (5)\OML/cmm/m/it/10 execute[]n[]m\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\
+OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 HADOOP[]SH
+[]PTS \OT1/cmr/m/n/10 =[]
+ []
+
+
+Overfull \hbox (157.41891pt too wide) in paragraph at lines 124--134
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 i=home=ubuntu=:ssh=hadoop[]sa \OMS/cmsy/m/
+n/10 ^^@
+ []
+
+
+Overfull \hbox (80.82085pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 lubuntu[] []=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 124--134
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (119.3797pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 SNAPSHOT=sbin=yarn \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (404.72372pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 daemons:shstartnodemanager\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 e
+xecute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
+0 " []\OML/cmm/m/it/10 =hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 124--134
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (119.3878pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 SNAPSHOT=sbin=:=mr \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (54.0107pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 jobhistory \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (792.31671pt too wide) in paragraph at lines 124--134
+\OML/cmm/m/it/10 daemon:shstarthistoryserver\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 
+execute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/
+10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/
+10 "\OML/cmm/m/it/10 sudouseradduser\OT1/cmr/m/n/10 1; \OML/cmm/m/it/10 sudouse
+radduser\OT1/cmr/m/n/10 2; \OML/cmm/m/it/10 sudouseradduser\OT1/cmr/m/n/10 3; \
+OML/cmm/m/it/10 sudouseradduser\OT1/cmr/m/n/10 4;  \OML/cmm/m/it/10 sudouseradd
+user\OT1/cmr/m/n/10 5; ")$ 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+! Undefined control sequence.
+<write> \newlabel{AppendixA}{{}{\thepage 
+                                         }}
+l.134 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\newlabel{AppendixA}{{}{}}
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 d
+       ef hadoop_load_workload(pm, exp_number, workload):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 def hadoop_
+                 load_workload(pm, exp_number, workload):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 136--140
+[]
+ []
+
+
+Overfull \hbox (184.22716pt too wide) in paragraph at lines 136--140
+[]\OML/cmm/m/it/10 oad[]orkload\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pm; exp[]umber
+; workload\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (59.9862pt too wide) in paragraph at lines 136--140
+\OML/cmm/m/it/10 time[]efore \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (218.10498pt too wide) in paragraph at lines 136--140
+\OML/cmm/m/it/10 time:time\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 HADOOP[]OSTNAME[]R
+EFIX \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.75586pt too wide) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (150.12073pt too wide) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 exp[]umbe
+rHADOOP[]N \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (163.78639pt too wide) in paragraph at lines 136--140
+\OML/cmm/m/it/10 HADOOP[]OSTNAME[]REFIX \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 1"$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141     s
+           ync_nova_list()
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.141     sync_
+               nova_list()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.144 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (135.42188pt too wide) in paragraph at lines 141--144
+[]$[]\OML/cmm/m/it/10 ova[]ist\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 load[]ommand \
+OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (74.20149pt too wide) in paragraph at lines 141--144
+\OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 workload[]et \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.83641pt too wide) in paragraph at lines 141--144
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (6)$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145     i
+           f (workload == "terasort"):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.147        load_
+                  command = "hadoop jar \
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.150                #
+                      53687091 = 5 GB
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.151                #
+                      107374182 = 10 GB
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 145--152
+[]
+ []
+
+
+Overfull \hbox (53.52986pt too wide) in paragraph at lines 145--152
+[]\OML/cmm/m/it/10 ommand \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (159.62376pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoopjar =home=ubuntu=hadoop \OMS/cmsy/m/n/1
+0 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (225.20676pt too wide) in paragraph at lines 145--152
+\OML/cmm/m/it/10 SNAPSHOT=share=hadoop=mapreduce=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (51.99318pt too wide) in paragraph at lines 145--152
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 examples \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (201.41093pt too wide) in paragraph at lines 145--152
+\OML/cmm/m/it/10 :jar teragen\OT1/cmr/m/n/10 53687091\OML/cmm/m/it/10 =user=hdu
+ser=terasort \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (31.59222pt too wide) in paragraph at lines 145--152
+\OML/cmm/m/it/10 input \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (55.55565pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10 "53687091 =
+ []
+
+
+Overfull \hbox (76.50496pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 GB\OT1/cmr/m/n/10 107374182 =
+ []
+
+
+Overfull \hbox (25.94933pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 GB$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153     e
+           lif (workload == "fb"):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 153--154
+[]
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155          #
+                #### Written by Zubair to copy fbTraces to Name Node#####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155          ##
+                 ### Written by Zubair to copy fbTraces to Name Node#####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155          ###
+                  ## Written by Zubair to copy fbTraces to Name Node#####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155          ####
+                   # Written by Zubair to copy fbTraces to Name Node#####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.155          #####
+                     Written by Zubair to copy fbTraces to Name Node#####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155          ##### W
+                      ritten by Zubair to copy fbTraces to Name Node#####
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! You can't use `macro parameter character #' in horizontal mode.
+l.155 ... by Zubair to copy fbTraces to Name Node#
+                                                  ####
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.155 ...by Zubair to copy fbTraces to Name Node##
+                                                  ###
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.155 ...y Zubair to copy fbTraces to Name Node###
+                                                  ##
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.155 ... Zubair to copy fbTraces to Name Node####
+                                                  #
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.155 ...Zubair to copy fbTraces to Name Node#####
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.156          #
+                # scp_folder_to_host("/home/routerlab/zubair-side-effects/wo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.156          ##
+                  scp_folder_to_host("/home/routerlab/zubair-side-effects/wo...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156          ## scp_
+                      folder_to_host("/home/routerlab/zubair-side-effects/wo...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.157          #
+                #            + ":~/")
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.157          ##
+                             + ":~/")
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.158          #
+                # print "fbTraces are copied to name node"
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.158          ##
+                  print "fbTraces are copied to name node"
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Double subscript.
+l.161 ...layScript FB-2009_samples_24_times_1hr_0_
+                                                  first50jobs.tsv 600 7 6710...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 155--166
+[]
+ []
+
+
+Overfull \hbox (179.7952pt too wide) in paragraph at lines 155--166
+[]\OML/cmm/m/it/10 older[]o[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 =home=router
+lab=zubair \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (25.77156pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 side \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (289.55513pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 effects=workload=fbTraces\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; g
+et[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 ) 
++
+ []
+
+
+Overfull \hbox (449.84116pt too wide) in paragraph at lines 155--166
+\OT1/cmr/m/n/10 " :  []\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 pri
+nt\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 fbTracesarecopiedtonamenode\OT1/cmr/m/n/10 
+"\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 LoadingHadoopFaceBookT
+races\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 load[]ommand \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (26.34732pt too wide) in paragraph at lines 155--166
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 rm \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (210.6438pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 rfscriptsTest\OT1/cmr/m/n/10 ;  \OML/cmm/m/it/10 javaGenerateR
+eplayScriptFB \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (929.49547pt too wide) in paragraph at lines 155--166
+\OT1/cmr/m/n/10 2009[]\OML/cmm/m/it/10 amples[]\OT1/cmr/m/n/10 4[]\OML/cmm/m/it
+/10 imes[]hr[][]irst\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 jobs:tsv\OT1/cmr/m/n/10 
+60076710886410\OML/cmm/m/it/10 scriptsTest =home=ubuntu=workGenInputworkGenOutp
+utTest\OT1/cmr/m/n/10 67108864\OML/cmm/m/it/10 =home=ubuntu=logshadoop=home=ubu
+ntu=WorkGen:jar []=home=ubuntu=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 155--166
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (557.46494pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 SNAPSHOT=myconf=workGenKeyValue[]onf:xsl[]\OT1/cmr/m/n/10 ;  \
+OML/cmm/m/it/10 hadoopjarHDFSWrite:jarorg:apache:hadoop:examples:HDFSWrite \OMS
+/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (59.90524pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 confhadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 155--166
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (353.30507pt too wide) in paragraph at lines 155--166
+\OML/cmm/m/it/10 SNAPSHOT=myconf=randomwriter[]onf:xsl =home=ubuntu=workGenInpu
+t\OT1/cmr/m/n/10 ; "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167     e
+           lse:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no % in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no % in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+! You can't use `macro parameter character #' in horizontal mode.
+l.170     #
+           number of workloads
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171     for i in range (1, workload_
+                                      set):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.173         #
+               user="sudo -u user"+p+"  "
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 167--177
+[]
+ []
+
+
+Overfull \hbox (21.9861pt too wide) in paragraph at lines 167--177
+[]\OML/cmm/m/it/10 et\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (15.58676pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.72414pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 str\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 user \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (33.24199pt too wide) in paragraph at lines 167--177
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 sudo \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (38.3601pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 uuser\OT1/cmr/m/n/10 " +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (57.91986pt too wide) in paragraph at lines 167--177
+\OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 load[]ata \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (69.2707pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 load[]ommand \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (453.321pt too wide) in paragraph at lines 167--177
+\OT1/cmr/m/n/10 "; "\OML/cmm/m/it/10 execute[]n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/i
+t/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n
+/10 )\OML/cmm/m/it/10 ; load[]ata\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 print\OT1/cm
+r/m/n/10 "\OML/cmm/m/it/10 Hadooploadterminatingaftertime \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 167--177
+\OT1/cmr/m/n/10 " +
+ []
+
+
+Overfull \hbox (76.29556pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 str\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 time:time\OT1/cmr/m/n/10 
+() \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (53.3196pt too wide) in paragraph at lines 167--177
+\OML/cmm/m/it/10 time[]efore\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 d
+       ef hadoop_run_workload(pm, exp_number, workload):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.179 def hadoop_
+                 run_workload(pm, exp_number, workload):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.183 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 179--183
+[]
+ []
+
+
+Overfull \hbox (181.9749pt too wide) in paragraph at lines 179--183
+[]\OML/cmm/m/it/10 un[]orkload\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 pm; exp[]umber;
+ workload\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (59.9862pt too wide) in paragraph at lines 179--183
+\OML/cmm/m/it/10 time[]efore \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (218.10498pt too wide) in paragraph at lines 179--183
+\OML/cmm/m/it/10 time:time\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 HADOOP[]OSTNAME[]R
+EFIX \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (43.75586pt too wide) in paragraph at lines 179--183
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (150.12073pt too wide) in paragraph at lines 179--183
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 exp[]umbe
+rHADOOP[]N \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (163.78639pt too wide) in paragraph at lines 179--183
+\OML/cmm/m/it/10 HADOOP[]OSTNAME[]REFIX \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 179--183
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 179--183
+\OT1/cmr/m/n/10 1"$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184     n
+           um_reducer= pm["hadoop:reducer"]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.184     num_
+              reducer= pm["hadoop:reducer"]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.186 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (64.34267pt too wide) in paragraph at lines 184--186
+[]$[]\OML/cmm/m/it/10 educer \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (58.12273pt too wide) in paragraph at lines 184--186
+\OML/cmm/m/it/10 pm\OT1/cmr/m/n/10 ["\OML/cmm/m/it/10 hadoop \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (103.38686pt too wide) in paragraph at lines 184--186
+\OML/cmm/m/it/10 reducer\OT1/cmr/m/n/10 "]\OML/cmm/m/it/10 num[]adoop \OT1/cmr/
+m/n/10 =
+ []
+
+
+Overfull \hbox (58.12273pt too wide) in paragraph at lines 184--186
+\OML/cmm/m/it/10 pm\OT1/cmr/m/n/10 ["\OML/cmm/m/it/10 hadoop \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (58.68307pt too wide) in paragraph at lines 184--186
+\OML/cmm/m/it/10 num[]adoop\OT1/cmr/m/n/10 "]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187     s
+           ync_nova_list()
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.187     sync_
+               nova_list()
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (133.41962pt too wide) in paragraph at lines 187--193
+[]$[]\OML/cmm/m/it/10 ova[]ist\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 run[]ommand \O
+T1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (82.74388pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 workload
+ \OT1/cmr/m/n/10 ==
+ []
+
+
+Overfull \hbox (55.72227pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 terasort\OT1/cmr/m/n/10 ") :
+ []
+
+
+Overfull \hbox (80.63242pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 print\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Running\OT1/cmr/m/n/10 
+" +
+ []
+
+
+Overfull \hbox (48.88205pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 workload \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (104.2626pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 workload:\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ru
+n[]art\OT1/cmr/m/n/10 1 =
+ []
+
+
+Overfull \hbox (159.62376pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 hadoopjar=home=ubuntu=hadoop \OMS/cmsy/m/n/10
+ ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (225.20676pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 SNAPSHOT=share=hadoop=mapreduce=hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (51.99318pt too wide) in paragraph at lines 187--193
+\OMS/cmsy/m/n/10 ^^C\OML/cmm/m/it/10 examples \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (61.59918pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 :jarterasort  \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (111.56755pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 Dmapred:reduce:tasks \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 " +
+ []
+
+
+Overfull \hbox (82.9378pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 str\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 num[]educer\OT1/cmr/m/n/1
+0 ) +
+ []
+
+
+Overfull \hbox (114.73758pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 =user=hduser=terasort \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (31.59222pt too wide) in paragraph at lines 187--193
+\OML/cmm/m/it/10 input \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 187--193
+\OT1/cmr/m/n/10 "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194     e
+           lif (workload == "fb"):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196        run_
+                 command = "chmod a+rwx scriptsTest; cd scriptsTest;./run-jo...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.197 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 194--197
+[]
+ []
+
+
+Overfull \hbox (53.52986pt too wide) in paragraph at lines 194--197
+[]\OML/cmm/m/it/10 ommand \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (46.98508pt too wide) in paragraph at lines 194--197
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 chmoda \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (169.95995pt too wide) in paragraph at lines 194--197
+\OML/cmm/m/it/10 rwxscriptsTest\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 cdscriptsTest
+\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 :=run \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (26.29468pt too wide) in paragraph at lines 194--197
+\OML/cmm/m/it/10 jobs \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (158.73296pt too wide) in paragraph at lines 194--197
+\OML/cmm/m/it/10 all:sh\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 pythonparse[]acebook[
+]ogs:py\OT1/cmr/m/n/10 "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198        t
+              ime.sleep(10)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 198--202
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203     n
+           umber_of_runs = int(6)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.203     number_
+                 of_runs = int(6)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.205     run_part3= "&
+                       > logs/run.out-"
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (60.74127pt too wide) in paragraph at lines 203--206
+[]$[]\OML/cmm/m/it/10 f[]uns \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (76.21695pt too wide) in paragraph at lines 203--206
+\OML/cmm/m/it/10 int\OT1/cmr/m/n/10 (6)\OML/cmm/m/it/10 run[]art\OT1/cmr/m/n/10
+ 2 =
+ []
+
+
+Overfull \hbox (114.73758pt too wide) in paragraph at lines 203--206
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 =user=hduser=terasort \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (36.32767pt too wide) in paragraph at lines 203--206
+\OML/cmm/m/it/10 output \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (55.38055pt too wide) in paragraph at lines 203--206
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 run[]art\OT1/cmr/m/n/10 3 =
+ []
+
+
+Overfull \hbox (15.55553pt too wide) in paragraph at lines 203--206
+\OT1/cmr/m/n/10 " \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (64.09859pt too wide) in paragraph at lines 203--206
+\OML/cmm/m/it/10 logs=run:out \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 203--206
+\OT1/cmr/m/n/10 "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207     I
+           P=get_ip_for_instance(HADOOP_NN)
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207     IP=get_
+                 ip_for_instance(HADOOP_NN)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.209 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (214.8379pt too wide) in paragraph at lines 207--209
+[]$[]\OML/cmm/m/it/10 p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 processList \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 207--209
+\OT1/cmr/m/n/10 []$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210     f
+           or i in range(1, number_of_runs):
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.210     for i in range(1, number_
+                                   of_runs):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.212         #
+               user="sudu -u user"+p+"  "
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.217 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 210--217
+[]
+ []
+
+
+Overfull \hbox (39.63016pt too wide) in paragraph at lines 210--217
+[]\OML/cmm/m/it/10 f[]uns\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (15.58676pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (54.72414pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 str\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 user \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (34.11934pt too wide) in paragraph at lines 210--217
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 sudu \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (38.3601pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 uuser\OT1/cmr/m/n/10 " +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (80.04619pt too wide) in paragraph at lines 210--217
+\OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 run[]ommand \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (47.60283pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 run[]art\OT1/cmr/m/n/10 1 +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (47.60283pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 run[]art\OT1/cmr/m/n/10 2 +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (47.60283pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 run[]art\OT1/cmr/m/n/10 3 +
+ []
+
+
+Overfull \hbox (12.80905pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (74.13402pt too wide) in paragraph at lines 210--217
+\OT1/cmr/m/n/10 "; "\OML/cmm/m/it/10 run[]rocess \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (77.33109pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 Process\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 target \OT1/cmr/m/n/1
+0 =
+ []
+
+
+Overfull \hbox (130.72594pt too wide) in paragraph at lines 210--217
+\OML/cmm/m/it/10 interact:execute[]n[]m; args \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (311.63235pt too wide) in paragraph at lines 210--217
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IP; run[]ommand\OT1/cmr/m/n/10 ))\OML/cmm/m/i
+t/10 run[]rocess:start\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 processList:append\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 run[]rocess\OT1/cmr/m/n/10 )$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218     f
+           or process in processList:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.221     execute_
+                  on_vm(IP, "python parse_terasort_logs.py;")
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.222     #
+           scp_file_from_host("run.out", "runs/run.out.\%s.\%s" \% (exp_numb...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.224     #
+           scp_file_from_host("hadoop-3.0.0-SNAMPSHOT/logs/facebook_log.tsv"...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.225 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 218--225
+[]
+ []
+
+
+Overfull \hbox (1120.97893pt too wide) in paragraph at lines 218--225
+[]\OML/cmm/m/it/10 n[]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 IP; \OT1/cmr/m/n/10 "\
+OML/cmm/m/it/10 pythonparse[]erasort[]ogs:py\OT1/cmr/m/n/10 ; ")\OML/cmm/m/it/1
+0 scp[]ile[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 run:out\OT1/cmr/m/n/10 "
+\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 runs=run:out:\OT1/cmr/m/n/
+10 %\OML/cmm/m/it/10 s:\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%(\O
+ML/cmm/m/it/10 exp[]umber; time[]efore\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; IP\OT
+1/cmr/m/n/10 )\OML/cmm/m/it/10 scp[]ile[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/i
+t/10 logs[]ummary:out\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/
+cmm/m/it/10 runs=logs[]ummary:out\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s:\OT1/cmr/m
+/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%(\OML/cmm/m/it/10 exp[]umber; time[]
+efore\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; IP\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 sc
+p[]ile[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 218--225
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (588.19481pt too wide) in paragraph at lines 218--225
+\OML/cmm/m/it/10 SNAMPSHOT=logs=facebook[]og:tsv\OT1/cmr/m/n/10 "\OML/cmm/m/it/
+10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 runs=facebook[]og:tsv:\OT1/cmr/m/n/10 %\
+OML/cmm/m/it/10 s:\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%(\OML/cm
+m/m/it/10 exp[]umber; time[]efore\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; get[]p[]or
+[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 ))$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.226     #
+           scp_file_from_host("hadoop-3.0.0-SNAPSHOT/logs/*history*.log", "r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226     #s
+            cp_file_from_host("hadoop-3.0.0-SNAPSHOT/logs/*history*.log", "r...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226     #scp_
+               file_from_host("hadoop-3.0.0-SNAPSHOT/logs/*history*.log", "r...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.231 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (126.03922pt too wide) in paragraph at lines 226--231
+[]$[]\OML/cmm/m/it/10 ile[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 hadoop \O
+MS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (94.67984pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 SNAPSHOT=logs= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (37.40353pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 history \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (396.62892pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 :log\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/
+cmm/m/it/10 runs=history:\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s:\OT1/cmr/m/n/10 %\
+OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%(\OML/cmm/m/it/10 exp[]umber; time[]efore\OT
+1/cmr/m/n/10 )\OML/cmm/m/it/10 ; IP\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 scp[]older
+[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (162.16106pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 SNAPSHOT=logs=fairscheduler= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (305.08226pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 runs=\OT1
+/cmr/m/n/10 "\OML/cmm/m/it/10 ; IP\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 execute[]n[
+]m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 get[]p[]or[]nstance\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 HADOOP[]N\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cm
+m/m/it/10 rm \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (43.54521pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 rhadoop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (292.25401pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 SNAPSHOT=logs=fairscheduler\OT1/cmr/m/n/10 ")\OML/cmm/m/it/10 
+scp[]older[]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 hadoop \OMS/cmsy/m/n/10 
+^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (94.67984pt too wide) in paragraph at lines 226--231
+\OML/cmm/m/it/10 SNAPSHOT=logs= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (187.26318pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 runs=\OT1
+/cmr/m/n/10 "\OML/cmm/m/it/10 ; IP\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 scp[]older[
+]rom[]ost\OT1/cmr/m/n/10 ("\OML/cmm/m/it/10 logs= \OMS/cmsy/m/n/10 ^^C
+ []
+
+
+Overfull \hbox (66.97116pt too wide) in paragraph at lines 226--231
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 runs=\OT1
+/cmr/m/n/10 "\OML/cmm/m/it/10 ; IP\OT1/cmr/m/n/10 )$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.232     #
+            Pull in all the NodeManager logs (should be done away with as so...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232     # P
+             ull in all the NodeManager logs (should be done away with as so...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no N in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+! You can't use `macro parameter character #' in horizontal mode.
+l.233     #
+            we can get log aggregation to work)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234     for i in range(2, num_
+                                hadoop + 1):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.236 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 232--236
+[]
+ []
+
+
+Overfull \hbox (38.17601pt too wide) in paragraph at lines 232--236
+[]\OML/cmm/m/it/10 adoop \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (14.44441pt too wide) in paragraph at lines 232--236
+\OT1/cmr/m/n/10 1) :
+ []
+
+
+Overfull \hbox (136.20409pt too wide) in paragraph at lines 232--236
+\OML/cmm/m/it/10 scp[]older[]rom[]ost\OT1/cmr/m/n/10 (" []\OML/cmm/m/it/10 =had
+oop \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (28.33342pt too wide) in paragraph at lines 232--236
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 0 \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (208.82133pt too wide) in paragraph at lines 232--236
+\OML/cmm/m/it/10 SNAPSHOT=logs=userlogs\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; \OT1
+/cmr/m/n/10 "\OML/cmm/m/it/10 runs=userlog \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (276.12065pt too wide) in paragraph at lines 232--236
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 i; get[]p
+[]or[]nstance\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 HADOOP[]OSTNAME[]REFIX \OT1/cmr/
+m/n/10 +
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 232--236
+\OT1/cmr/m/n/10 " \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (37.57716pt too wide) in paragraph at lines 232--236
+\OT1/cmr/m/n/10 %\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 "%\OML/cmm/m/it/10 i\OT1/cmr
+/m/n/10 ))$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238     p
+           rint "Hadoop run terminating after time: " + str(time.time() - ti...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no " in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.238 ...g after time: " + str(time.time() - time_
+                                                  before)$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+)
+! Emergency stop.
+<*> AppendixA.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 493485
+ 217 string characters out of 3143526
+ 60048 words of memory out of 3000000
+ 3416 multiletter control sequences out of 15000+200000
+ 3986 words of font info for 15 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 18i,4n,12p,192b,113s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

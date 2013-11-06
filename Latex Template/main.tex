@@ -31,7 +31,7 @@
 \graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
 
 \usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
-\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+\hypersetup{urlcolor=black, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
 \begin{document}
@@ -60,9 +60,17 @@
 %----------------------------------------------------------------------------------------
 
 \begin{titlepage}
+
 \begin{center}
 
-\textsc{\LARGE \univname}\\[1.5cm] % University name
+ \begin{flushleft}
+ \begin{figure}[htbp]
+ \includegraphics[width=2cm, height=2cm ]{./Figures/tu.pdf}\
+\textsc{\LARGE\LARGE \univname}\\[1.5cm] % University name
+\end{figure} 
+ \end{flushleft}
+    
+
 \textsc{\Large Master Thesis}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
@@ -85,9 +93,9 @@
 \end{flushleft}
 \end{minipage}\\[3cm]
  
-\large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+\large \textit{A thesis submitted in partial fulfilment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
 \textit{in the}\\[0.4cm]
-\groupname\\\deptname\\[2cm] % Research group name and department name
+\groupname\\[2cm] % Research group name and department name
  
 {\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
@@ -108,22 +116,8 @@
 
 \addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-I, \authornames, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
-
-\begin{itemize} 
-\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
-\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
-\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
-\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-\end{itemize}
- 
-Signed:\\
-\rule[1em]{25em}{0.5pt} % This prints a line for the signature
- 
-Date:\\
-\rule[1em]{25em}{0.5pt} % This prints a line to write the date
+\textbf{Dear Bedar,} 
+ Please Swap this page and put the declaration page I signed and submitted to you! 
 }
 
 \clearpage % Start a new page
@@ -136,10 +130,13 @@ Date:\\
 
 \null\vfill % Add some space to move the quote down the page a bit
 
-\textit{``Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, "}
+\begin{flushleft}
+\textit{"If a program manipulates a large amount of data, it does so in a small number of ways."}
+\end{flushleft}
+
 
 \begin{flushright}
-Khwaja Zubair Sediqi
+Alan J. Perlis
 \end{flushright}
 
 \vfill\vfill\vfill\vfill\vfill\vfill\null % Add some space at the bottom to position the quote just right
@@ -154,12 +151,53 @@ Khwaja Zubair Sediqi
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-The increasing volume of data from user interaction to Internet-based applications requires new storage and processing technologies. Typical databases can not process large datasets of terabytes in reasonable time. MapReduce is a programming paradigm that was invented by Yahoo! to process large datasets in key/value pattern.  Hadoop is an open source implementation of MapReduce, that is used to store and process large datasets in parallel and distributed manner on cluster of commodity computers. Since preparing and maintenance of infrastructure for storage and process of large datasets requires infrastructure, storage and computational resources, which costs expensive to organizations. As solution, organizations can use cloud computing services, to store, retrieve and process large datasets and use provided resources according to their need.\\
+The increasing volume of data from user interaction to Internet-based applications requires new storage and processing technologies. Typical databases can not process large datasets of terabytes in reasonable time. MapReduce is a programming paradigm that was invented by engineers at Google, to process large datasets in key/value pattern.  Hadoop is an open source implementation of MapReduce, that is used to store and process large datasets in parallel and distributed manner on cluster of commodity computers. Preparation and maintenance of infrastructure for storage and process of large datasets requires infrastructure, storage and computational resources, which costs expensive to organizations, as a solution, organizations can use cloud computing services to store, retrieve and process large datasets and use provided resources according to their needs.\\
 
-Running large clusters of Hadoop on cloud infrastructure is expensive for organizations. The optimization added to Hadoop schedulers provides the opportunity of multi-tenancy for the organization, where sing Hadoop cluster can be shared by multiple organization. Cloud operators such as AMAZON EC2, provides virtualized infrastructure, where virtual machines are collocated on single physical machine. This thesis is about analysis of side effects of collocated VMs ( Collocated VMs are datanodes of Hadoop cluster(s)) on performance of Hadoop. The thesis also evaluates the optimizations made to Hadoop schedulers. More precisely, the performance of fairshare scheduler and capacity share schedulers are analysed. The effect of speculative task execution for mentioned schedulers is also explained. \\
-
-As result, we want to show that speculative task execution for small jobs does not improve the performance of Hadoop performance. In one hand, the evaluation shows that performance of capacity share scheduler is better than fairshare scheduler. On the other hand, capacity share scheduler has worst fairness for job completion time in comparison to fairshare scheduler. We also proof that for all the schedulers the collocation of datanodes VMs from same cluster has better performance results in comparison to collocation of VMs from different clusters. The experiment results show, though collocation of datanodes has negative impact by increasing job completion time for both capacity share and fairshare schedulers of Hadoop, but capacity share scheduler is more robust to collocation of datanodes.
+ The optimization added to Hadoop schedulers provides the opportunity of multi-tenancy of the resources to the organizations, where single Hadoop cluster can be shared by multiple organizations. Cloud operators such as AMAZON EC2, provides virtualized infrastructure, where virtual machines are collocated on single physical machine. This thesis explains analysis of side effects of collocated VMs ( Collocated VMs are datanodes of Hadoop cluster(s)) on performance of Hadoop. The performance of fairshare scheduler and capacity share schedulers are analysed and the effects of speculative task execution for mentioned schedulers is also explained. In one hand, the evaluations show that performance of capacity share scheduler is better than fairshare scheduler. On the other hand, capacity share scheduler has worst fairness for job completion time in comparison to fairshare scheduler. We show that for targeted set of schedulers the collocation of datanodes VMs from same cluster has better performance results in comparison to collocation of VMs from different clusters.
 }
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Abstract (German Version)} % Add the "Abstract" page entry to the Contents
+
+%\abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+\begin{center}
+\textbf{Abstract (German Version)}
+\end{center}
+
+
+Die steigenden Datenmengen Internet-basierter Anwendungen verlangen
+neuartige Speicher- und Verarbeitungstechnologien. Typische
+Datenbanklösungen können Datensätze ab der Größenordnung von Terabytes
+nicht mehr in angemessener Zeit verarbeiten. MapReduce ist ein
+Algorithmus, der von Google, entwickelt wurde, um große Datenmengen zu
+verarbeiten. Hadoop ist eine Open-Source-Implementierung von MapReduce,
+um diese Verarbeitung zu parallelisieren und auf Cluster handelsüblicher
+Computer zu verteilen. Da Aufbau und Betrieb einer solchen
+Cluster-Infrastruktur teuer und aufwändig für Unternehmen ist, wird dies
+zunehmend an Dienstleister ausgelagert, um so Rechen- und
+Speicherkapazitäten kostengünstiger und effizienter nutzen zu können.\\
+
+Um die Bereitstellung ihrer Resourcen an mehrere Kunden gleichzeitig zu
+optimieren, werden von Cloud-Service-Anbietern wie z.B. Amazon EC2
+Hadoop-Scheduler eingesetzt. Dies geschieht durch den Einsatz von
+virtuellen Maschinen transparent für den Kunden. Die vorliegende Arbeit
+analysiert die Auswirkungen verschiedener Scheduler-Algorithmen in
+solchen Szenarien auf die Performanz von Hadoop. Die Leistungsfähigkeit
+von Fair-Share-Scheduling und Capacity-Share-Scheduling werden
+verglichen, jeweils mit und ohne "speculative task execution".\\
+
+In einem Testaufbau wird gezeigt, dass der Capacity-Share-Scheduler eine
+höhere Performanz aufweist als der Fair-Share-Scheduler, jedoch eine
+geringere Fairness. Weiter wird gezeigt, dass die Virtualisierung von
+Datenknoten des gleichen Clusters auf derselben physikalischen Maschine
+leistungsfähiger ist als eine Verteilung von virtuellen Maschinen auf
+verschiedene physikalische Maschinen.\\
+%}
 
 \clearpage % Start a new page
 
@@ -213,24 +251,25 @@ and encouragement, without whom none of this would have been possible.
 \lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
 \listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
 {
-\textbf{HDFS} & \textbf{H}adoop \textbf{D}istributed \textbf{F}ile \textbf{S}ystem \\
-\textbf{LATE} & \textbf{L}ongest \textbf{A}pproximate \textbf{T}ime to \textbf{E}nd \\
-\textbf{EC2} & \textbf{E}lastic \textbf{C}loud \textbf{2}\\
-\textbf{GB} & \textbf{G}iga \textbf{B}ytes  \\
-\textbf{RAM} & \textbf{R}andom \textbf{A}ccess \textbf{M}emory \\
-\textbf{TCP} & \textbf{T}ransmission \textbf{C}ontrol \textbf{P}rotocol \\
-\textbf{NIST} & \textbf{N}ational \textbf{I}nstitute of \textbf{S}tandards and  \textbf{T}echnology \\
-\textbf{SaaS} & \textbf{S}oftware as a \textbf{S}ervice \\
-\textbf{IaaS} & \textbf{I}nfrastructure as a \textbf{S}ervice \\
-\textbf{PaaS} & \textbf{P}latform as a \textbf{S}ervice \\
-\textbf{FIFO} & \textbf{F}irst \textbf{I}n \textbf{F}irst  \textbf{O}ut \\
 \textbf{CPU} & \textbf{C}entral \textbf{P}rocessing \textbf{U}nit \\
+\textbf{EC2} & \textbf{E}lastic \textbf{C}loud \textbf{2}\\
+\textbf{FIFO} & \textbf{F}irst \textbf{I}n \textbf{F}irst  \textbf{O}ut \\
+\textbf{GB} & \textbf{G}iga \textbf{B}ytes  \\
 \textbf{GHZ} & \textbf{G}iga \textbf{H}ertz \\
-\textbf{NFS} & \textbf{N}etwork \textbf{F}ile \textbf{S}ystem\\
+\textbf{GPRS} & \textbf{G}eneral \textbf{P}acket  \textbf{R}adio  \textbf{S}ervice \\
+\textbf{HDFS} & \textbf{H}adoop \textbf{D}istributed \textbf{F}ile \textbf{S}ystem \\
+\textbf{IaaS} & \textbf{I}nfrastructure as a \textbf{S}ervice \\
 \textbf{ICT} & \textbf{I}nformation and \textbf{C}ommunication \textbf{T}echnology\\
 \textbf{IT} & \textbf{I}nformation \textbf{T}echnology \\
-\textbf{UNSTD} & \textbf{U}nited \textbf{N}ations \textbf{S}cience and \textbf{T}echnology group for \textbf{D}evelopment\\
+\textbf{LATE} & \textbf{L}ongest \textbf{A}pproximate \textbf{T}ime to \textbf{E}nd \\
+\textbf{NFS} & \textbf{N}etwork \textbf{F}ile \textbf{S}ystem\\
+\textbf{NIST} & \textbf{N}ational \textbf{I}nstitute of \textbf{S}tandards and  \textbf{T}echnology \\
 \textbf{OFC} & \textbf{O}ptical \textbf{F}iber \textbf{C}ommunication\\
+\textbf{PaaS} & \textbf{P}latform as a \textbf{S}ervice \\
+\textbf{RAM} & \textbf{R}andom \textbf{A}ccess \textbf{M}emory \\
+\textbf{SaaS} & \textbf{S}oftware as a \textbf{S}ervice \\
+\textbf{TCP} & \textbf{T}ransmission \textbf{C}ontrol \textbf{P}rotocol \\
+\textbf{UNSTD} & \textbf{U}nited \textbf{N}ations \textbf{S}cience and \textbf{T}echnology group for \textbf{D}evelopment\\
 \textbf{VMs} & \textbf{V}irtual \textbf{M}achine(s) \\
 \textbf{YARN} & \textbf{Y}et \textbf{A}nother \textbf{R}esource  \textbf{N}egotiator \\
 
@@ -262,7 +301,7 @@ and encouragement, without whom none of this would have been possible.
 
 \pagestyle{empty} % Page style needs to be empty for this page
 
-\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
+\dedicatory{} % Dedication text
 
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics Add a gap in the Contents, for aesthetics
 
@@ -272,7 +311,7 @@ and encouragement, without whom none of this would have been possible.
 
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
-\pagestyle{fancy} % Return the page headers back to the "fancy" style
+\pagestyle{fancy} % Return the page headechnologyers back to the "fancy" style
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
@@ -285,24 +324,6 @@ and encouragement, without whom none of this would have been possible.
 \input{./Chapters/Chapter6} 
 \input{./Chapters/Chapter7} 
 
-%----------------------------------------------------------------------------------------
-%	THESIS CONTENT - APPENDICES
-%----------------------------------------------------------------------------------------
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
-
-% Include the appendices of the thesis as separate files from the Appendices folder
-% Uncomment the lines as you write the Appendices
-
-%\input{./Appendices/AppendixA}
-%\input{./Appendices/AppendixB}
-%\input{./Appendices/AppendixC}
-
-\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-\backmatter
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -315,5 +336,27 @@ and encouragement, without whom none of this would have been possible.
 \bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
 
 \bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\backmatter
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{./Appendices/AppendixA}
+%\input{./Appendices/AppendixB}
+%\input{./Appendices/AppendixC}
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%\backmatter
+
+
 
 \end{document}  

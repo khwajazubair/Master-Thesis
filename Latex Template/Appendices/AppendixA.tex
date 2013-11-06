@@ -1,9 +1,1061 @@
 % Appendix A
 
-\chapter{Appendix Title Here} % Main appendix title
+\chapter{Appendix A} % Main appendix title
 
-\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+\label{Used Scripts} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\lhead{Appendix A. \emph{Appendix Title Here}} % This is for the header on each page - perhaps a shortened title
+\lhead{\emph{Appendix A}} % This is for the header on each page - perhaps a shortened 
 
-Write your Appendix content here.
+The process of running experiments were automated using python scripts. This appendix contains the scripts used for experiment execution and log processing. Most of the scripts are written using "pyton" scripting language. For plotting the results, both "bash" and "R" scripts were used. The scripts were written in a joint work by me and my advisor Mr.Lalith Suresh. 
+
+
+\section{Experiment Execution Scripts}
+ Below Python scripts were used to install, configure and run Hadoop on experimental environment. 
+
+\subsection{sideEffects Python Script}
+
+\begin{verbatim}
+#file name: side_effects.py
+# This file was the main file to start the process of installation, configuration and running Hadoop.
+
+from interact import *
+from placement import *
+from cassandra_utils import *
+from resource_bench_utils import *
+import hadoop_utils
+import simplejson
+import time
+import glob
+import os
+import shutil
+from common_monitors import *
+from multiprocessing import Process
+
+NODE_LIST = ["loadgen162", "loadgen163", "loadgen164", "loadgen165", 
+            "loadgen166", "loadgen167", "loadgen168"]
+def run_hadoop_baseline(pm, nodes_used, workload, schedule):
+    ''' This is a single run to gather the baseline resource
+        and performance profile for hadoop  '''
+
+    ###### SPAWN VMS ##########
+    hadoop_utils.spawn_hadoop_vms(pm["hadoop:num_hadoop"],
+                     pm["exp_number"],
+                     pm["hadoop:placement"])
+    time.sleep(120)
+
+    ####### START PROCESSES ##########
+
+    hadoopStartProcess = Process(target=hadoop_utils.setup_hadoop, 
+        args=(pm["hadoop:num_hadoop"],
+     pm["exp_number"],pm, schedule))
+    hadoopStartProcess.start()
+    hadoopStartProcess.join()
+    #time.sleep(120)
+
+    ####### LOAD DATA ##########
+
+    hadoopLoadProcess = Process(target=hadoop_utils.hadoop_load_workload, 
+        args=(pm, pm["exp_number"], workload ))
+    hadoopLoadProcess.start()
+    hadoopLoadProcess.join()
+    time.sleep(5)
+
+    ####### RUN WORKLOAD ##########
+    run_mpstat(nodes_used, pm["exp_number"])
+    run_bwmon(nodes_used, pm["exp_number"])
+    run_iostat(nodes_used, pm["exp_number"])
+    hadoopRunProcess = Process(target=hadoop_utils.hadoop_run_workload, 
+        args=(pm, pm["exp_number"], workload))
+    #time.sleep(40)
+
+    hadoopRunProcess.start()
+    hadoopRunProcess.join()
+    #time.sleep(180)
+    retreive_mpstat_results(nodes_used, pm["exp_number"])
+    retreive_bwmon_results(nodes_used, pm["exp_number"])
+    retreive_iostat_results(nodes_used, pm["exp_number"])
+
+def delete_hadoop_vms(num_hadoop,
+                     exp_number,
+                     placement_map):
+    """ Delete Hadoop VMs according to placement_map """
+
+    HADOOP_HOSTNAME_PREFIX = "hadoop-%s" % exp_number
+
+    sync_glance_index()
+    sync_nova_list()
+
+    # Delete all existing instances of cassandra and ycsb
+    #
+    for i in range(1, num_hadoop + 1):
+        if (HADOOP_HOSTNAME_PREFIX + "-%s" % i in ACTIVE_MAP):
+            nova_delete(ACTIVE_MAP[HADOOP_HOSTNAME_PREFIX + "-%s" % i].id)
+
+    time.sleep(20)
+
+
+
+def baseline_hadoop_experiment(exp_number):
+    
+
+    
+    pm = {}
+    reducer = int(10)
+    pm["exp_number"] = exp_number
+    
+
+    workloads = ['terasort']
+    load = "terasort"
+    #schedular = ['capacity','fair']
+    schedular = ['capacity']
+    for schedule in schedular:     
+    	    for hadoop_spec in ["mapred-site-spec-true.xml",
+            "mapred-site-spec-false.xml"]:
+                for run_no in range(1,6):
+
+                    try:
+                        shutil.rmtree("runs")
+                    except OSError:
+                            print "runs/ folder doesn't exist. Continuing."
+
+                    os.mkdir("runs")
+ 
+                    ################# One-to-One #############
+                    pm["hadoop:reducer"]  = reducer
+                    pm["hadoop:schedular"]  = schedule
+                    pm["mapred-site.xml"] = "mapred-site-spec-true.xml"
+                    pm["hadoop:num_hadoop"] = len(NODE_LIST)
+                    pm["hadoop:placement"] = STRATEGIES["round-robin"]
+                    (NODE_LIST, len(NODE_LIST))
+                    run_hadoop_baseline(pm, NODE_LIST, load, schedule)
+
+                    ### Dump the property map to a config file
+                    config_dump = open('runs/conf.exp', 'w')
+                    config_dump.write(simplejson.dumps(pm, indent=4))
+                    config_dump.close()
+                    schedule_name= str(schedule)
+                    if pm["mapred-site.xml"] == "mapred-site-spec-false.xml" :
+                        spec = "spec-false"
+                    else:
+                        spec = "spec-true"
+
+
+                    shutil.copytree("runs", "exp_x/hadoop_bs_3/runs-%s-%s-%s"
+                     % ("bs-exp-"+schedule_name+"-"\
+                                    +spec+"-"+str(run_no)+"-"+str(reducer),
+                                     pm["exp_number"],
+                                     int(time.time())))
+                   \
+
+
+                    shutil.rmtree("runs")
+                    delete_hadoop_vms(pm["hadoop:num_hadoop"],
+                        pm["exp_number"],
+                        pm["hadoop:placement"])
+        #index= index+1
+
+ 
+if __name__ == '__main__':
+    exp_number = 300 # 12 == all quorum, 13 == all one read=one
+    baseline_hadoop_experiment(exp_number)
+
+\end{verbatim}
+
+\subsection{HadoopUtils Python Script}
+
+\begin{verbatim}
+
+#file name: Hadoop_utils.py
+from interact import *
+from placement import *
+import interact
+import time
+import sys
+from multiprocessing import Process
+
+
+def spawn_hadoop_vms(num_hadoop,
+                     exp_number,
+                     placement_map):
+    """ Spawns Hadoop VMs according to placement_map """
+
+    HADOOP_HOSTNAME_PREFIX = "hadoop-%s" % exp_number
+
+
+    sync_glance_index()
+    sync_nova_list()
+
+    nova_boot(IMAGE_MAP["hadoop-nn-v3"],
+              HADOOP_HOSTNAME_PREFIX + "-1", 4,
+              "--availability-zone=nova:%s" % placement_map[1])
+    #time.sleep(60)
+
+    for i in range(2, num_hadoop + 1):
+        nova_boot(IMAGE_MAP["hadoop-dn-v2"],
+                  HADOOP_HOSTNAME_PREFIX + "-%s" % i, 4,
+                  "--availability-zone=nova:%s" % placement_map[i])
+
+    # Check to see if all VMs have booted
+    retries = 10
+    success = True
+
+    while (retries != 0):
+        print "Retries ", retries
+        success = True
+        sync_nova_list()
+        for i in range(1, num_hadoop + 1):
+            if (not HADOOP_HOSTNAME_PREFIX + "-%s" % i in ACTIVE_MAP):
+                success = False
+                break
+
+        if (success is False):
+            print "Hadoop VMs haven't booted yet. \
+                    Waiting for 10 seconds to recheck"
+            retries -= 1
+            time.sleep(10)
+            continue
+
+        else:
+            break
+
+    if (success is False):
+        print "Could not boot all VMs. Exiting"
+        print ACTIVE_MAP
+        sys.exit(1)
+    else:
+        print "VMs have booted"
+
+
+def setup_hadoop(num_hadoop,
+                 exp_number,pm, schedule):
+    """ Spawns Hadoop VMs according to placement_map """
+
+    HADOOP_HOSTNAME_PREFIX = "hadoop-%s" % exp_number
+    HADOOP_NN = HADOOP_HOSTNAME_PREFIX + "-1"
+
+    sync_nova_list()
+
+    #
+    # Setup slaves file
+    #
+    slaves_file = open('slaves_%s' % (exp_number), 'w')
+
+    for i in range(2, num_hadoop + 1):
+        slaves_file.write(HADOOP_HOSTNAME_PREFIX + "-%s" % i + "\n")
+
+    slaves_file.close()
+
+    scp_file_to_host("slaves_%s" % (exp_number), \
+    get_ip_for_instance(HADOOP_NN)
+                     + ":~/hadoop-3.0.0-SNAPSHOT/etc/hadoop/slaves")
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "sudo chmod a+rwx \
+      ~/hadoop-3.0.0-SNAPSHOT/etc/hadoop/*")
+   
+    if (schedule == "fair"):
+          print "fair schedular is selected"
+     
+          execute_on_vm(get_ip_for_instance(HADOOP_NN), \
+          "cd ~/hadoop-3.0.0-SNAPSHOT/etc/hadoop;\
+            rm -r yarn-site.xml;")
+          execute_on_vm(get_ip_for_instance(HADOOP_NN), \
+          "cd ~/hadoop-3.0.0-SNAPSHOT/etc/hadoop;\
+            cp yarn-site-fair.xml yarn-site.xml")
+          
+    elif (schedule =="capacity"):
+          print "Default capacity schedular is selected"
+ 
+    
+    else:
+          print" Schedular not specified";
+          sys.exit(1) 
+    
+    scp_file_to_host(pm["mapred-site.xml"], get_ip_for_instance(HADOOP_NN)
+                     + ":~/hadoop-3.0.0-SNAPSHOT/etc/hadoop/mapred-site.xml")
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "rm -r parse_terasort_logs.py;")
+    scp_file_to_host("parse_terasort_logs.py", get_ip_for_instance(HADOOP_NN)
+                     + ":~/parse_terasort_logs.py")
+     
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "hdfs namenode -format")
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "~/hadoop-3.0.0-SNAPSHOT/\
+      sbin/hadoop-daemon.sh start namenode")
+    time.sleep(5)
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "HADOOP_SSH_OPTS='-i\
+      /home/ubuntu/.ssh/hadoop_rsa\
+     -l ubuntu' ~/hadoop-3.0.0-SNAPSHOT/sbin/hadoop-daemons.sh start datanode")
+    execute_on_vm(get_ip_for_instance(HADOOP_NN),\
+     "~/hadoop-3.0.0-SNAPSHOT/sbin/yarn-daemon.sh\
+     start resourcemanager")
+    time.sleep(5)
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "HADOOP_SSH_OPTS='-i\
+      /home/ubuntu/.ssh/hadoop_rsa\
+     -l ubuntu' ~/hadoop-3.0.0-SNAPSHOT/sbin/yarn-daemons.sh start nodemanager")
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), "~/hadoop-3.0.0-SNAPSHOT/sbin/./\
+      mr-jobhistory-daemon.sh start historyserver")
+
+def hadoop_load_workload(pm, exp_number, workload):
+    time_before = time.time()
+    HADOOP_HOSTNAME_PREFIX = "hadoop-%s" % exp_number
+    HADOOP_NN = HADOOP_HOSTNAME_PREFIX + "-1"
+
+    sync_nova_list()
+    load_command = ""
+    workload_set=int(6)
+
+    if (workload == "terasort"):
+       print "Loading Hadoop teraSort"
+       load_command = "hadoop jar \
+       /home/ubuntu/hadoop-3.0.0-SNAPSHOT/share/hadoop/mapreduce/\
+       hadoop-*examples*.jar \
+               teragen 53687091  /user/hduser/terasort-input-"
+               #53687091 = 5 GB
+               #107374182 = 10 GB
+   
+    elif (workload == "fb"):
+
+       
+         print "Loading Hadoop FaceBook Traces"
+         load_command = "rm -rf scriptsTest; \
+                       java GenerateReplayScript\
+                       FB-2009_samples_24_times_1hr_0_first50jobs.tsv\
+                       600 7 67108864 10 scriptsTest\
+                       /home/ubuntu/workGenInput workGenOutputTest\
+                       67108864 /home/ubuntu/logs\
+                       hadoop /home/ubuntu/WorkGen.jar\
+                       '/home/ubuntu/hadoop-3.0.0-SNAPSHOT/\
+                       myconf/workGenKeyValue_conf.xsl';\
+                       hadoop jar HDFSWrite.jar org.apache.\
+                       hadoop.examples.HDFSWrite -conf \
+                       hadoop-3.0.0-SNAPSHOT/myconf/\
+                       randomwriter_conf.xsl\
+                       /home/ubuntu/workGenInput;"                          
+
+    else: 
+        print "Hadoop Load Failed, workload not recognized\
+         (%s)" % (workload)
+        sys.exit(1)
+    #number of workloads    
+    for i in range (1, workload_set):
+        p= str(i)
+        #user="sudo -u user"+p+"  "
+        load_data=load_command+p+";" 
+        execute_on_vm(get_ip_for_instance(HADOOP_NN), load_data)
+    print "Hadoop load terminating after time: "\
+     + str(time.time() - time_before)
+
+
+def hadoop_run_workload(pm, exp_number, workload):
+    time_before = time.time()
+    HADOOP_HOSTNAME_PREFIX = "hadoop-%s" % exp_number
+    HADOOP_NN = HADOOP_HOSTNAME_PREFIX + "-1"
+    
+    num_reducer= pm["hadoop:reducer"]
+    num_hadoop = pm["hadoop:num_hadoop"]
+
+    sync_nova_list()
+    run_command = ""
+    if (workload == "terasort"): 
+       print "Running "+workload+" workload."
+       run_part1 = "hadoop jar /home/ubuntu/hadoop-3.0.0-SNAPSHOT/share/hadoop/\
+       mapreduce/hadoop-*examples*.jar terasort \
+        -D mapred.reduce.tasks="+str(num_reducer)+"  /user/hduser/terasort-input-"
+   
+    elif (workload == "fb"):
+       print "Running " + workload + " workload."
+       run_command = "chmod a+rwx scriptsTest; cd scriptsTest;\
+       ./run-jobs-all.sh; python parse_facebook_logs.py"
+       
+       time.sleep(10)
+    else:
+       print "Running Hadoop Workload " + workload + " Failed."
+       sys.exit(1)
+    
+    number_of_runs = int(6)
+    run_part2= " /user/hduser/terasort-output-"
+    run_part3= "&> logs/run.out-"
+
+    IP=get_ip_for_instance(HADOOP_NN)
+    processList =[]   
+    
+    for i in range(1, number_of_runs):
+        p=str(i)
+        
+        run_command=run_part1+p+run_part2+p+run_part3+p+";"        
+        run_process= Process(target=interact.execute_on_vm,\
+         args=(IP, run_command))
+        run_process.start()
+        processList.append(run_process)
+    
+    for process in processList:
+        process.join()
+    time.sleep(10)
+    execute_on_vm(IP, "python parse_terasort_logs.py;")
+    scp_file_from_host("logs_summary.out", "runs/logs_summary.out%s.%s"
+     % (exp_number, time_before), IP)
+    scp_folder_from_host("hadoop-3.0.0-SNAPSHOT/logs/fairscheduler/*",\
+     "runs/",IP)
+    execute_on_vm(get_ip_for_instance(HADOOP_NN), 
+      "rm -r hadoop-3.0.0-SNAPSHOT/logs/fairscheduler")
+    scp_folder_from_host("hadoop-3.0.0-SNAPSHOT/logs/*", "runs/",IP)
+    scp_folder_from_host("logs/*", "runs/",IP)
+    for i in range(2, num_hadoop + 1):
+        scp_folder_from_host("~/hadoop-3.0.0-SNAPSHOT/logs/userlogs",\
+         "runs/userlog-%s"
+         % i, get_ip_for_instance(HADOOP_HOSTNAME_PREFIX + "-%s" % i))
+    print "Hadoop run terminating after time: " + str(time.time()\
+     - time_before)
+
+
+\end{verbatim}
+
+
+
+
+
+
+\section{Log Processing Scripts}
+After experiment execution below scripts were used to process te logs and plot the data. 
+
+
+\subsection{TerasortLogProcess Python Script}
+
+\begin{verbatim}
+
+#File name: Terasort_log_collector.py 
+# This file is used to collect the required metrics from Hadoop's performance logs. 
+
+import os, os.path
+import csv
+
+#Returns job ID
+def jobID(fileName):
+
+ for line in open(fileName):
+  if "Running job" in line:
+   p=line.split("_")
+   return p[1]
+
+
+def shuffleInputRatio(fileName):
+
+ for line in open(fileName):
+  if "shuffleInputRatio" in line:
+   p=line.split("=")
+   return p[1]
+
+def outputShuffleRatio(fileName):
+
+ for line in open(fileName):
+  if "outputShuffleRatio" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns 1 for successfull completion and 0 otherwise
+def jobCompletion(fileName):
+
+ for line in open(fileName):
+  if "completed successfully" in line:
+   return str(1)
+  else:
+   return str(0)
+
+#Returns number of map tasks launched
+def mapTasks(fileName):
+
+ for line in open(fileName):
+  if "Launched map tasks" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns number of reduce tasks launched
+def reduceTasks(fileName):
+
+ for line in open(fileName):
+  if "Launched reduce tasks" in line:
+   p=line.split("=")
+   return p[1]
+
+
+#Returns number of bytes read
+def bytesRed(fileName):
+
+ for line in open(fileName):
+  if "HDFS: Number of bytes read" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns number of byte written
+def bytesWritten(fileName):
+
+ for line in open(fileName):
+  if "HDFS: Number of bytes written" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns the total map time in mili seconds
+def mapTime(fileName):
+
+ for line in open(fileName):
+  if "Total time spent by all maps" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns total of reduce time in mili seconds
+def reduceTime(fileName):
+
+ for line in open(fileName):
+  if "Total time spent by all reduces" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns total time job took to complete. 
+def jobTime(fileName):
+
+ for line in open(fileName):
+  if "The job took" in line:
+   p=line.split()
+   return p[3]
+
+#Returns CPU time in mili seconds for this task
+def cpuTime(fileName):
+
+ for line in open(fileName):
+  if "CPU time spent" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns memory amount in bytes , used for this task
+def memoryAmount(fileName):
+
+ for line in open(fileName):
+  if "Physical memory (bytes)" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns number of failed shuffles
+def failShuffle(fileName):
+ for line in open(fileName):
+  if "Failed Shuffles" in line:
+   p=line.split("=")
+   return p[1]
+
+#Returns number of killed tasks
+def killedTasks(fileName):
+ for line in open(fileName):
+  if "Killed map tasks" in line:
+   p=line.split("=")
+   return p[1]
+
+#Main method of the program
+def main():
+    fileName="runs-baseline-hadoop-experiment-110-1373501038/\
+    run.out.110.1373500460.37"
+  
+   
+    a=jobID(fileName)
+    b=shuffleInputRatio(fileName)
+    c=outputShuffleRatio(fileName)
+    d=jobCompletion(fileName)
+    e=mapTasks(fileName)
+    f=reduceTasks(fileName)
+    g=bytesRed(fileName)
+    h=bytesWritten(fileName)
+    i=mapTime(fileName)
+    j=reduceTime(fileName)
+    k=jobTime(fileName)
+    l=cpuTime(fileName)
+    m=memoryAmount(fileName)
+    n=failShuffle(fileName)
+    o=killedTasks(fileName)
+    log=map(lambda x: x.strip(), [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o])
+   
+    with open('terasort_summary.out', 'ab') as csvout:
+         csvout = csv.writer(csvout, delimiter = ' ', quotechar=' ',\
+          quoting=csv.QUOTE_MINIMAL )
+         csvout.writerow(log)
+  
+main()
+
+\end{verbatim}
+
+
+\subsection{R Scripts}
+
+Below R script was used to read the data and plot the results. 
+
+\begin{verbatim}
+#File name: Box_Plot.R
+
+exp1_bs = read.table("../exp_1/exp_1_bs.csv", header=TRUE)
+exp1_co_dn = read.table("../exp_1/exp_1_co_dn.csv", header=TRUE)
+exp1_co_cl1 = read.table("../exp_1/exp_1_co_cl1.csv", header=TRUE)
+exp1_co_cl2 = read.table("../exp_1/exp_1_co_cl2.csv", header=TRUE)
+
+bs4_Df <- data.frame(exp1_bs)
+dn4_Df <- data.frame(exp1_co_dn)
+ccl1_Df <- data.frame(exp1_co_cl1)
+ccl2_Df <- data.frame(exp1_co_cl2)
+
+#Sub data frame for each case
+bsDf1 <- bs4_Df[, c(4, 12, 13, 15, 16, 17, 18 )]
+dnDf1 <- dn4_Df[, c(4, 12, 13, 15, 16, 17, 18 )]
+ccl1_Df <- ccl1_Df[, c(4, 12, 13, 15, 16, 17,18 )]
+ccl2_Df <- ccl2_Df[, c(4, 12, 13, 15, 16, 17,18 )]
+#clDf1 <- cl1_Df[, c(4, 15, 16, 17,18)]
+###########################################################
+#####          Functions  Section                  #######
+###########################################################
+matrixCreator <- function(df,spec,schedule,total_run, col){
+
+	matrixC <- matrix (ncol=5, byrow=TRUE)
+
+	for(i in 1:total_run){
+	run = paste('r',i,sep="")
+	
+	run = df[which(df$r==i & df$sp==spec & df$s==schedule), ]
+	run = run[, c(col)]
+	matrixC <- rbind(matrixC,c(run))
+	}
+
+	matrixC <- matrixC[!is.na(matrixC[,1]),, drop = FALSE]
+	return(matrixC)
+}
+#Sum of JobTimes
+sumOf <- function(matrix1){
+   
+   		x1 = sum(matrix1[1,1:5])
+		x2 = sum(matrix1[2,1:5])
+		x3 = sum(matrix1[3,1:5])
+		x4 = sum(matrix1[4,1:5])
+		x5 = sum(matrix1[5,1:5]) 
+		x = c(x1, x2, x3, x4, x5)
+ 	return(x)
+}
+#Mean of matrix
+meanOf <- function(matrix1){
+    
+		x1 = mean(matrix1[1,1:5])
+		x2 = mean(matrix1[2,1:5])
+		x3 = mean(matrix1[3,1:5])
+		x4 = mean(matrix1[4,1:5])
+		x5 = mean(matrix1[5,1:5]) 
+		x = c(x1, x2, x3, x4, x5)
+		#print(x)
+		
+ 	return (x)
+}
+
+minOf <- function(matrix1){
+	x1 = min(matrix1[1,1:5])
+	x2 = min(matrix1[2,1:5])
+	x3 = min(matrix1[3,1:5])
+	x4 = min(matrix1[4,1:5])
+	x5 = min(matrix1[5,1:5])
+	x = c(x1, x2, x3, x4, x5)
+	return (x)
+}
+
+maxOf <- function(matrix1){
+	x1 = max(matrix1[1,1:5])
+	x2 = max(matrix1[2,1:5])
+	x3 = max(matrix1[3,1:5])
+	x4 = max(matrix1[4,1:5])
+	x5 = max(matrix1[5,1:5])
+	x = c(x1, x2, x3, x4, x5)
+	return (x)
+}
+
+sdOf <- function(matrix1){
+	x1 = sd(matrix1[1,1:5])
+	x2 = sd(matrix1[2,1:5])
+	x3 = sd(matrix1[3,1:5])
+	x4 = sd(matrix1[4,1:5])
+	x5 = sd(matrix1[5,1:5])
+	x = c(x1, x2, x3, x4, x5)
+	return (x)
+}
+
+########################################################
+#Column variabels to Fetch data from Df1 and total run
+job_d=1
+cpu_t=2
+mem_amount=3
+k_tasks=4
+run_total = 25
+sum1 =0 
+mean1=1
+
+###########################################################
+#####          Baseline Section           #######
+###########################################################
+
+#baseline dataframe
+Df1 = bsDf1
+
+######################################
+#Matrices from Colocated Datanode data
+
+bs_cpt <- matrixCreator(Df1,"t","cp",run_total,job_d)
+bs_cpf <- matrixCreator(Df1,"f","cp",run_total,job_d)
+bs_fst <- matrixCreator(Df1,"t","fs",run_total,job_d)
+bs_fsf <- matrixCreator(Df1,"f","fs",run_total,job_d)
+
+##### Killed Tasks ###########
+bs_cpt_tasks <- matrixCreator(Df1,"t","cp",run_total,k_tasks)
+bs_fst_tasks <- matrixCreator(Df1,"t","fs",run_total,k_tasks)
+
+##################################
+#bs Mean Section
+bs_mean_cpt <- meanOf(bs_cpt)
+bs_mean_cpf <- meanOf(bs_cpf)
+bs_mean_fst <- meanOf(bs_fst)
+bs_mean_fsf <- meanOf(bs_fsf)
+
+bs_min_cpt <- minOf(bs_cpt)
+bs_min_cpf <- minOf(bs_cpf)
+bs_min_fst <- minOf(bs_fst)
+bs_min_fsf <- minOf(bs_fsf)
+
+bs_max_cpt <- maxOf(bs_cpt)
+bs_max_cpf <- maxOf(bs_cpf)
+bs_max_fst <- maxOf(bs_fst)
+bs_max_fsf <- maxOf(bs_fsf)
+
+bs_sd_cpt <- sdOf(bs_cpt)
+bs_sd_cpf <- sdOf(bs_cpf)
+bs_sd_fst <- sdOf(bs_fst)
+bs_sd_fsf <- sdOf(bs_fsf)
+
+bs_mean_cpt_tasks <- meanOf(bs_cpt_tasks)
+bs_mean_fst_tasks <- meanOf(bs_fst_tasks)
+
+bs_min_cpt_tasks <- minOf(bs_cpt_tasks)
+bs_min_fst_tasks <- minOf(bs_fst_tasks)
+
+bs_max_cpt_tasks <- maxOf(bs_cpt_tasks)
+bs_max_fst_tasks <- maxOf(bs_fst_tasks)
+
+bs_sd_cpt_tasks <- sdOf(bs_cpt_tasks)
+bs_sd_fst_tasks <- sdOf(bs_fst_tasks)
+###########################################################
+#####          Colocated Datanode Section           #######
+###########################################################
+
+#colocated dn data frame
+Df1 = dnDf1
+
+#Matrices from Colocated Datanode data
+dn_cpt <- matrixCreator(Df1,"t","cp",run_total,job_d)
+dn_cpf <- matrixCreator(Df1,"f","cp",run_total,job_d)
+dn_fst <- matrixCreator(Df1,"t","fs",run_total,job_d)
+dn_fsf <- matrixCreator(Df1,"f","fs",run_total,job_d)
+
+########### Killed Tasks #############
+dn_cpt_tasks <- matrixCreator(Df1,"t","cp",run_total,k_tasks)
+dn_cpf_tasks <- matrixCreator(Df1,"f","cp",run_total,k_tasks)
+dn_fst_tasks <- matrixCreator(Df1,"t","fs",run_total,k_tasks)
+dn_fsf_tasks <- matrixCreator(Df1,"f","fs",run_total,k_tasks)
+
+######################################
+#Mean Section for Colocated Datanodes
+dn_mean_cpt <- meanOf(dn_cpt)
+dn_mean_cpf <- meanOf(dn_cpf)
+dn_mean_fst <- meanOf(dn_fst)
+dn_mean_fsf <- meanOf(dn_fsf)
+
+dn_min_cpt <- minOf(dn_cpt)
+dn_min_cpf <- minOf(dn_cpf)
+dn_min_fst <- minOf(dn_fst)
+dn_min_fsf <- minOf(dn_fsf)
+
+dn_max_cpt <- maxOf(dn_cpt)
+dn_max_cpf <- maxOf(dn_cpf)
+dn_max_fst <- maxOf(dn_fst)
+dn_max_fsf <- maxOf(dn_fsf)
+
+
+dn_sd_cpt <- sdOf(dn_cpt)
+dn_sd_cpf <- sdOf(dn_cpf)
+dn_sd_fst <- sdOf(dn_fst)
+dn_sd_fsf <- sdOf(dn_fsf)
+
+
+dn_mean_cpt_tasks <- meanOf(dn_cpt_tasks)
+dn_mean_fst_tasks <- meanOf(dn_fst_tasks)
+
+dn_min_cpt_tasks <- minOf(dn_cpt_tasks)
+dn_min_fst_tasks <- minOf(dn_fst_tasks)
+
+dn_max_cpt_tasks <- maxOf(dn_cpt_tasks)
+dn_max_fst_tasks <- maxOf(dn_fst_tasks)
+
+dn_sd_cpt_tasks <- sdOf(dn_cpt_tasks)
+dn_sd_fst_tasks <- sdOf(dn_fst_tasks)
+
+###########################################
+###########################################
+Df1 = ccl1_Df
+
+#Matrices from Colocated Datanode data
+ccl1_cpt <- matrixCreator(Df1,"t","cp",run_total,job_d)
+ccl1_cpf <- matrixCreator(Df1,"f","cp",run_total,job_d)
+ccl1_fst <- matrixCreator(Df1,"t","fs",run_total,job_d)
+ccl1_fsf <- matrixCreator(Df1,"f","fs",run_total,job_d)
+
+########### Killed Tasks #############
+ccl1_cpt_tasks <- matrixCreator(Df1,"t","cp",run_total,k_tasks)
+ccl1_cpf_tasks <- matrixCreator(Df1,"f","cp",run_total,k_tasks)
+ccl1_fst_tasks <- matrixCreator(Df1,"t","fs",run_total,k_tasks)
+ccl1_fsf_tasks <- matrixCreator(Df1,"f","fs",run_total,k_tasks)
+
+######################################
+#Mean Section for Colocated Datanodes
+ccl1_mean_cpt <- meanOf(ccl1_cpt)
+ccl1_mean_cpf <- meanOf(ccl1_cpf)
+ccl1_mean_fst <- meanOf(ccl1_fst)
+ccl1_mean_fsf <- meanOf(ccl1_fsf)
+
+ccl1_min_cpt <- minOf(ccl1_cpt)
+ccl1_min_cpf <- minOf(ccl1_cpf)
+ccl1_min_fst <- minOf(ccl1_fst)
+ccl1_min_fsf <- minOf(ccl1_fsf)
+
+ccl1_max_cpt <- maxOf(ccl1_cpt)
+ccl1_max_cpf <- maxOf(ccl1_cpf)
+ccl1_max_fst <- maxOf(ccl1_fst)
+ccl1_max_fsf <- maxOf(ccl1_fsf)
+
+ccl1_sd_cpt <- sdOf(ccl1_cpt)
+ccl1_sd_cpf <- sdOf(ccl1_cpf)
+ccl1_sd_fst <- sdOf(ccl1_fst)
+ccl1_sd_fsf <- sdOf(ccl1_fsf)
+
+ccl1_mean_cpt_tasks <- meanOf(ccl1_cpt_tasks)
+ccl1_mean_fst_tasks <- meanOf(ccl1_fst_tasks)
+
+ccl1_min_cpt_tasks <- minOf(ccl1_cpt_tasks)
+ccl1_min_fst_tasks <- minOf(ccl1_fst_tasks)
+
+ccl1_max_cpt_tasks <- maxOf(ccl1_cpt_tasks)
+ccl1_max_fst_tasks <- maxOf(ccl1_fst_tasks)
+
+ccl1_sd_cpt_tasks <- sdOf(ccl1_cpt_tasks)
+ccl1_sd_fst_tasks <- sdOf(ccl1_fst_tasks)
+
+############################################
+############################################
+Df1 = ccl2_Df
+
+#Matrices from Colocated Datanode data
+ccl2_cpt <- matrixCreator(Df1,"t","cp",run_total,job_d)
+ccl2_cpf <- matrixCreator(Df1,"f","cp",run_total,job_d)
+ccl2_fst <- matrixCreator(Df1,"t","fs",run_total,job_d)
+ccl2_fsf <- matrixCreator(Df1,"f","fs",run_total,job_d)
+
+########### Killed Tasks #############
+ccl2_cpt_tasks <- matrixCreator(Df1,"t","cp",run_total,k_tasks)
+ccl2_cpf_tasks <- matrixCreator(Df1,"f","cp",run_total,k_tasks)
+ccl2_fst_tasks <- matrixCreator(Df1,"t","fs",run_total,k_tasks)
+ccl2_fsf_tasks <- matrixCreator(Df1,"f","fs",run_total,k_tasks)
+
+######################################
+#Mean Section for Colocated Datanodes
+ccl2_mean_cpt <- meanOf(ccl2_cpt)
+ccl2_mean_cpf <- meanOf(ccl2_cpf)
+ccl2_mean_fst <- meanOf(ccl2_fst)
+ccl2_mean_fsf <- meanOf(ccl2_fsf)
+
+ccl2_min_cpt <- minOf(ccl2_cpt)
+ccl2_min_cpf <- minOf(ccl2_cpf)
+ccl2_min_fst <- minOf(ccl2_fst)
+ccl2_min_fsf <- minOf(ccl2_fsf)
+
+ccl2_max_cpt <- maxOf(ccl2_cpt)
+ccl2_max_cpf <- maxOf(ccl2_cpf)
+ccl2_max_fst <- maxOf(ccl2_fst)
+ccl2_max_fsf <- maxOf(ccl2_fsf)
+
+
+ccl2_sd_cpt <- sdOf(ccl2_cpt)
+ccl2_sd_cpf <- sdOf(ccl2_cpf)
+ccl2_sd_fst <- sdOf(ccl2_fst)
+ccl2_sd_fsf <- sdOf(ccl2_fsf)
+
+
+ccl2_mean_cpt_tasks <- meanOf(ccl2_cpt_tasks)
+ccl2_mean_fst_tasks <- meanOf(ccl2_fst_tasks)
+
+ccl2_min_cpt_tasks <- minOf(ccl2_cpt_tasks)
+ccl2_min_fst_tasks <- minOf(ccl2_fst_tasks)
+
+ccl2_max_cpt_tasks <- maxOf(ccl2_cpt_tasks)
+ccl2_max_fst_tasks <- maxOf(ccl2_fst_tasks)
+
+ccl2_sd_cpt_tasks <- sdOf(ccl2_cpt_tasks)
+ccl2_sd_fst_tasks <- sdOf(ccl2_fst_tasks)
+
+printbsRuns <- function(set){
+
+	print("----- cpt -------")
+for(i in 1:5){
+
+	print(c(mean(bs_cpt[i,1:5]), max(bs_cpt[i,1:5]) - \
+	(min(bs_cpt[i,1:5])), sd((bs_cpt[i,1:5])) ))
+	
+}
+
+print("----- cpf -------")
+for(i in 1:5){
+	print(c(mean(bs_cpf[i,1:5]), max(bs_cpf[i,1:5]) - \
+	min(bs_cpf[i,1:5]), sd((bs_cpf[i,1:5])) ))
+
+}
+
+print("----- fst -------")
+for(i in 1:5){
+	print(c(mean(bs_fst[i,1:5]), max(bs_fst[i,1:5]) - \
+	min(bs_fst[i,1:5]), sd((bs_fst[i,1:5])) ))
+}
+
+print("----- fsf -------")
+for(i in 1:5){
+	print(c(mean(bs_fsf[i,1:5]), max(bs_fsf[i,1:5]) - \
+	 min(bs_fsf[i,1:5]), sd((bs_fsf[i,1:5])) ))
+	
+
+}
+
+}
+
+	
+printSumComp <- function(){
+
+	print("---Mean comparison")
+	print("---cpt comp----")
+	print(mean(bs_sum_cpt))
+	print(mean(dn_sum_cpt))
+
+	print("---cpf comp----")
+	print(mean(bs_sum_cpf))
+	print(mean(dn_sum_cpf))
+
+	print("---fst comp----")
+	print(mean(bs_mean_fst))
+	print(mean(dn_mean_fst))
+
+	print("---fsf comp----")
+	print(mean(bs_mean_fsf))
+	print(mean(dn_mean_fsf))
+
+}
+
+############# Print Killed Tasks Colocated Datanodes #################
+printdnTasks <- function( ){
+	print("Colocated DataNodes Tasks")
+	print("----- cpt -------")
+for(i in 1:5){
+	print(c(sum(dn_cpt_tasks[i,1:5]),mean(dn_cpt_tasks[i,1:5]), \
+	max(dn_cpt_tasks[i,1:5]) - (min(dn_cpt_tasks[i,1:5])),
+	 range(dn_cpt_tasks[i,1:5]),sd((dn_cpt_tasks[i,1:5])) ))
+}
+
+print("----- fst -------")
+for(i in 1:5){
+	print(c(sum(dn_fst_tasks[i,1:5]),mean(dn_fst_tasks[i,1:5]), \
+	max(dn_fst_tasks[i,1:5]) - (min(dn_fst_tasks[i,1:5])), 
+		range(dn_fst_tasks[i,1:5]), sd((dn_fst_tasks[i,1:5])) ))
+}
+}
+
+##################### Job Duration ###################
+printdnJobs <- function( ){
+	print("Colocated DataNodes Jobs Completion Time (sum, mean, max-min,\
+	 range, sd)")
+	print("----- cpt -------")
+for(i in 1:5){
+	print(c(sum(dn_cpt[i,1:5]),mean(dn_cpt[i,1:5]), max(dn_cpt[i,1:5]) - \
+	(min(dn_cpt[i,1:5])),
+	 range(dn_cpt[i,1:5]),sd((dn_cpt[i,1:5])) ))
+}
+print("----- cpf -------")
+for(i in 1:5){
+	print(c(sum(dn_cpf[i,1:5]),mean(dn_cpf[i,1:5]), max(dn_cpf[i,1:5]) - \
+	(min(dn_cpf[i,1:5])),
+	 range(dn_cpf[i,1:5]),sd((dn_cpf[i,1:5])) ))
+}
+print("----- fst -------")
+for(i in 1:5){
+	print(c(sum(dn_fst[i,1:5]),mean(dn_fst[i,1:5]), max(dn_fst[i,1:5]) - \
+	(min(dn_fst[i,1:5])), 
+		range(dn_fst[i,1:5]), sd((dn_fst[i,1:5])) ))
+}
+print("----- fsf -------")
+for(i in 1:5){
+	print(c(sum(dn_fsf[i,1:5]),mean(dn_fsf[i,1:5]), max(dn_fsf[i,1:5]) - \
+	(min(dn_fsf[i,1:5])),
+	 range(dn_fsf[i,1:5]), sd((dn_fsf[i,1:5])) ))
+	}
+}
+
+############ Number of Killed Tasks ####################
+printbsTasks <- function( ){
+	print( "Baseline Killed Tasks per run (sum, mean, max-min, range, sd)")
+
+	print("----- cpt -------")
+for(i in 1:5){
+
+	print(c(sum(bs_cpt_tasks[i,1:5]),mean(bs_cpt_tasks[i,1:5]), \
+	max(bs_cpt_tasks[i,1:5]) - (min(bs_cpt_tasks[i,1:5])),
+	 range(bs_cpt_tasks[i,1:5]),sd((bs_cpt_tasks[i,1:5])) ))
+}
+
+
+print("----- fst -------")
+for(i in 1:5){
+	print(c(sum(bs_fst_tasks[i,1:5]),mean(bs_fst_tasks[i,1:5]), \
+	max(bs_fst_tasks[i,1:5]) - (min(bs_fst_tasks[i,1:5])), 
+		range(bs_fst_tasks[i,1:5]), sd((bs_fst_tasks[i,1:5])) ))
+}
+
+}
+
+################## Print Matrix #####################
+printMatrix <- function(mat){
+
+	for(i in 1:5){
+	print(mat[i, 1:5])
+	}
+}
+
+################# PLOT Functions ####################
+
+create.barplots <- function(vec)
+ {
+ 
+  barplot(vec,beside=TRUE,xlab="experiment set", ylab="\
+  Number of Killed Tasks",xlim=c(0,100),main="BS vs Co_Cl1,\
+   Jobcompletion, bs_cpt, bs_fst,cl1_cpt , cl1_fst") 
+                        # is supposed to close the pdf device
+}
+
+	meanPl1 <- matrix (ncol=5, byrow=TRUE)		
+	meanPl1 <- rbind(meanPl1,c(mean(bs_mean_cpt_tasks)))
+	meanPl1 <- rbind(meanPl1,c(mean(bs_mean_fst_tasks)))
+	meanPl1 <- rbind(meanPl1,c(mean(dn_mean_cpt_tasks)))
+	meanPl1 <- rbind(meanPl1,c(mean(dn_mean_fst_tasks)))
+
+	meanPl1 <- meanPl1[!is.na(meanPl1[,1]),, drop = FALSE]
+   print(sum(bs_mean_cpt_tasks))
+   print(sum(bs_mean_fst_tasks))
+   print(sum(dn_mean_cpt_tasks))
+   print(sum(dn_mean_fst_tasks))
+
+################# Functions To Call ########################
+create.barplots(meanPl1)
+#printSumComp()
+#printbsJobs()
+#printdnJobs()
+#printbsTasks()
+#printdnTasks()
+#printMatrix(bs_cpf)
+
+\end{verbatim}

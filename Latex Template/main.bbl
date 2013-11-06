@@ -1,45 +1,9 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Facbook(2013)]{fb1}
-Facbook.
-\newblock Key facts, September 2013.
-\newblock URL \url{https://newsroom.fb.com/Key-Facts}.
-
-\bibitem[Matei~Zaharia(2008)]{mat1}
-Anthony D. Joseph Randy~Katz Matei~Zaharia, Andy~Konwinski.
-\newblock Improving mapreduce performance in heterogeneous environments.
-\newblock \emph{USENIX Association, 8th USENIX Symposium on Operating Systems
-  Design and Implementation}, I:\penalty0 13, 2008.
-
-\bibitem[Yongqiang~He(2011)]{ieee1}
-Yin Huai Zheng Shao Namit Jain Xiaodong Zhang Zhiwei~Xu Yongqiang~He,
-  Rubao~Lee.
-\newblock Rcfile: A fast and space-efﬁcient data placement structure in
-  mapreduce-based warehouse systems.
-\newblock \emph{IEEE}, I:\penalty0 1199--1208, 2011.
-
-\bibitem[Dean and Ghemawat(2004)]{google}
-Jeffrey Dean and Sanjay Ghemawat.
-\newblock Mapreduce: Simplified data processing on large clusters.
-\newblock \emph{Google, Inc}, I\penalty0 (2):\penalty0 1236--1239, March 2004.
-
-\bibitem[Dean and Ghemawat(Dec, 2004)]{mapreduce}
-Jeffrey Dean and Sanjay Ghemawat.
-\newblock Mapreduce: Simplified data processing on large clusters.
-\newblock \emph{Google}, I:\penalty0 all, Dec, 2004.
-\newblock URL \url{http://labs.google.com/papers/mapreduce.html}.
-
-\bibitem[Apache()]{mahout}
-Apache.
-\newblock Apache mahout.
-\newblock \emph{Apache Mahout is a project to build machine-learning libraries
-  (such as classification and clustering algorithms) that run on Hadoop}.
-\newblock URL \url{http://mahout.apache.org/}.
 
 \bibitem[White(2012)]{tom3}
 Tom White.
@@ -53,22 +17,59 @@ The Apache~Software Foundation.
 \newblock website, August 2013.
 \newblock URL \url{www.apache.org}.
 
-\bibitem[Grance(January 2011)]{nist}
+\bibitem[Facbook(2013)]{fb1}
+Facbook.
+\newblock Key facts, September 2013.
+\newblock URL \url{https://newsroom.fb.com/Key-Facts}.
+
+\bibitem[Matei~Zaharia(2008)]{mat1}
+Anthony D. Joseph Randy~Katz Matei~Zaharia, Andy~Konwinski.
+\newblock Improving mapreduce performance in heterogeneous environments.
+\newblock \emph{USENIX Association, 8th USENIX Symposium on Operating Systems
+  Design and Implementation}, page~13, 2008.
+
+\bibitem[Yongqiang~He(2011)]{ieee1}
+Yin Huai Zheng Shao Namit Jain Xiaodong Zhang Zhiwei~Xu Yongqiang~He,
+  Rubao~Lee.
+\newblock Rcfile: A fast and space-efﬁcient data placement structure in
+  mapreduce-based warehouse systems.
+\newblock \emph{IEEE}, pages 1199--1208, 2011.
+
+\bibitem[Dean and Ghemawat(2004)]{mapreduce}
+Jeffrey Dean and Sanjay Ghemawat.
+\newblock Mapreduce: Simplified data processing on large clusters.
+\newblock \emph{Google}, page all, December 2004.
+\newblock URL \url{http://labs.google.com/papers/mapreduce.html}.
+
+\bibitem[Apache()]{mahout}
+Apache.
+\newblock Apache mahout.
+\newblock \emph{Apache Mahout is a project to build machine-learning libraries
+  (such as classification and clustering algorithms) that run on Hadoop}.
+\newblock URL \url{http://mahout.apache.org/}.
+
+\bibitem[Grance(2011)]{nist}
 Peter Mell~Timothy Grance.
 \newblock The nist definition of cloud computing.
-\newblock \emph{National Institute of Standards and Technology},
-  Draft:\penalty0 7, January 2011.
+\newblock \emph{National Institute of Standards and Technology}, Draft, January
+  2011.
 
 \bibitem[Sandholm and Lai(2010)]{dynamic}
 Thomas Sandholm and Kevin Lai.
 \newblock Dynamic proportional share scheduling in hadoop.
 \newblock \emph{Social Computing Lab, Hewlett-Packard Labs, Palo Alto, CA
-  94304, USA}, I:\penalty0 110--131, 2010.
+  94304, USA}, pages 110--131, 2010.
 
-\bibitem[X(2010)]{fair}
-X.
+\bibitem[Facebook(2010)]{fair}
+Facebook.
 \newblock Hadoop fair scheduler design document.
-\newblock \emph{X}, I:\penalty0 1--11, 2010.
+\newblock October 2010.
+
+\bibitem[Software(2011)]{openstack}
+Cloud Software.
+\newblock Openstack.
+\newblock \emph{Creative Commons}, 2011.
+\newblock URL \url{www.openstack.org}.
 
 \bibitem[of~Information and of~Afghanistan(2012)]{afg1}
 Ministry of~Information and Communication of~Afghanistan.
@@ -80,12 +81,19 @@ Ministry of~Information and Communication of~Afghanistan.
 Elham Ghashghai and Rosalind Lewis.
 \newblock Issues affecting internet use in afghanistan and developing countries
   in the middle east.
-\newblock http://www.rand.org/publications/IP/IP23.:\penalty0 all, march 2003.
+\newblock http://www.rand.org/publications/IP/IP23., March 2003.
 \newblock URL \url{http://www.rand.org/publications/IP/IP23}.
 
 \bibitem[Stats(2011)]{afg3}
 Internet~World Stats.
-\newblock Asia internet usage and population, Dec 2011.
+\newblock Asia internet usage and population.
+\newblock website, December 2011.
 \newblock URL \url{http://www.internetworldstats.com/stats3.htm#asia}.
+
+\bibitem[Corp(2012)]{sailfish}
+Sriram Rao Raghu Ramakrishnan Adam Silberstein Mike Ovsiannikov Quantcast Corp
+  Damian Reeves~Quantcast Corp.
+\newblock Sailfish: A framework for large scale data processing.
+\newblock \emph{Microsoft, LinkedIn, Quantcast Corp}, pages 1-- 14, 2012.
 
 \end{thebibliography}

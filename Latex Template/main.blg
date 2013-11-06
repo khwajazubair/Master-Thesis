@@ -4,13 +4,14 @@ The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--entry type for "fb1" isn't style-file defined
---line 65 of file Bibliography.bib
+--line 46 of file Bibliography.bib
 Warning--entry type for "yarn" isn't style-file defined
---line 77 of file Bibliography.bib
+--line 67 of file Bibliography.bib
 Warning--entry type for "afg1" isn't style-file defined
---line 118 of file Bibliography.bib
+--line 107 of file Bibliography.bib
 Warning--entry type for "afg3" isn't style-file defined
---line 187 of file Bibliography.bib
+--line 170 of file Bibliography.bib
+Warning--I didn't find a database entry for "google"
 Warning--I didn't find a database entry for "capacity"
 Too many commas in name 1 of "Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz" for entry mat1
 while executing---line 1233 of file unsrtnat.bst
@@ -22,70 +23,71 @@ Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , 
 while executing---line 1233 of file unsrtnat.bst
 Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
 while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz" for entry mat1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz" for entry mat1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
-while executing---line 1315 of file unsrtnat.bst
-Warning--empty year in mahout
-Warning--empty year in mahout
 Warning--can't use both volume and number fields in tom3
 Warning--empty publisher in tom3
+Too many commas in name 1 of "Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz" for entry mat1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Matei Zaharia, Andy Konwinski, Anthony D. Joseph, Randy Katz" for entry mat1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Yongqiang He , Rubao Lee , Yin Huai, Zheng Shao , Namit Jain , Xiaodong Zhang , Zhiwei Xu" for entry ieee1
+while executing---line 1315 of file unsrtnat.bst
+Warning--empty year in mahout
+Warning--empty year in mahout
+Warning--empty journal in fair
 Warning--empty journal in afg2
-You've used 14 entries,
+You've used 15 entries,
             2481 wiz_defined-function locations,
-            637 strings with 6298 characters,
-and the built_in function-call counts, 4424 in all, are:
-= -- 390
-> -- 138
-< -- 15
-+ -- 66
+            637 strings with 6514 characters,
+and the built_in function-call counts, 4864 in all, are:
+= -- 440
+> -- 137
+< -- 21
++ -- 68
 - -- 38
-* -- 285
-:= -- 697
-add.period$ -- 48
-call.type$ -- 14
-change.case$ -- 27
-chr.to.int$ -- 14
-cite$ -- 19
-duplicate$ -- 245
-empty$ -- 458
-format.name$ -- 62
-if$ -- 951
+* -- 268
+:= -- 741
+add.period$ -- 53
+call.type$ -- 15
+change.case$ -- 29
+chr.to.int$ -- 15
+cite$ -- 21
+duplicate$ -- 297
+empty$ -- 486
+format.name$ -- 61
+if$ -- 1082
 int.to.chr$ -- 1
-int.to.str$ -- 15
-missing$ -- 11
-newline$ -- 84
-num.names$ -- 42
-pop$ -- 123
+int.to.str$ -- 16
+missing$ -- 12
+newline$ -- 91
+num.names$ -- 45
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 15
 quote$ -- 0
-skip$ -- 153
+skip$ -- 208
 stack$ -- 0
-substring$ -- 146
-swap$ -- 36
-text.length$ -- 1
+substring$ -- 122
+swap$ -- 76
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 95
-warning$ -- 5
-while$ -- 37
+type$ -- 102
+warning$ -- 6
+while$ -- 38
 width$ -- 0
-write$ -- 193
+write$ -- 207
 (There were 15 error messages)
